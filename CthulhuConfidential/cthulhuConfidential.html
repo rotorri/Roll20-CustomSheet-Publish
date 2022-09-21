@@ -1,0 +1,2788 @@
+<!--Roll20 Cthulhu Confidential custom sheet 1.0-->
+<!--크툴루 컨피덴셜 한국어 커스텀 시트-->
+<!--본 커스텀 시트는 커미션 요청자에 의해 무료배포 됩니다.-->
+<!--제작자 허가 없는 출처삭제 무단 공유 및 재배포, 원본 코드 무단 편집, 타 커미션 요청을 금지합니다-->
+<!--2022.09 제작-->
+<!-- contact : the_rotorri@Twitter // github.com/rotorri -->
+
+  <div class="sheet-confidential rotorri">
+    <div class="sheet-header">
+      <div class="sheet-title">
+        <h1>Cthulhu Confidential</h1>
+        <h2>크툴루 컨피덴셜</h2>
+      </div>
+      <div class="sheet-info">
+        <div class="sheet-info1">
+          custom sheet by. Phyllis Oakley<br>
+          develop & design by. Rotorri
+        </div>
+        <div class="sheet-info2">
+          <span>플레이어 이름</span>
+          <input type="text" name="attr_player_name" value="" placeholder="이름">
+        </div>
+      </div>
+    </div>
+  
+    <div class="sheet-top">
+      <div class="sheet-profile">
+        <h3>형사 프로필</h3>
+        <div class="sheet-profile-name">
+          <span>이름</span>
+          <input type="text" name="attr_character_name" value="" placeholder="이름">
+        </div>
+        <div class="sheet-profile-job">
+          <span>직업</span>
+          <input type="text" name="attr_character_job" value="" placeholder="직업">
+        </div>
+      </div>
+      <div class="sheet-again">
+        <h3>강행</h3>
+        <div class="sheet-again-area">
+          <div class="sheet-again-area-left">
+            <input type="number" name="attr_again" value="4" min="0" max="10">
+          </div>
+          <div class="sheet-again-area-right">
+            <div class="sheet-again-max">
+              <span>MAX</span>
+              <span>10</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <hr />
+  
+    <div class="sheet-mid">
+      <div class="sheet-mid-left">
+        <h3>수사기능</h3>
+        <div class="sheet-ability">
+          <table>
+            <tr>
+              <td>
+                <input type="checkbox" class="sheet-ability-toggle" id="label1" value="1" name="attr_ab1">
+                <label for="label1"><span>감식</span></label>
+                <div class="sheet-ability-icon1">기술</div>
+              </td>
+              <td>
+                <input type="checkbox" class="sheet-ability-toggle" id="label2" value="1" name="attr_ab2">
+                <label for="label2"><span>역사학</span></label>
+                <div class="sheet-ability-icon2">학식</div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <input type="checkbox" class="sheet-ability-toggle" id="label3" value="1" name="attr_ab3">
+                <label for="label3"><span>거리의 법칙</span></label>
+                <div class="sheet-ability-icon3">대인</div>
+              </td>
+              <td>
+                <input type="checkbox" class="sheet-ability-toggle" id="label4" value="1" name="attr_ab4">
+                <label for="label4"><span>열쇠공</span></label>
+                <div class="sheet-ability-icon1">기술</div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <input type="checkbox" class="sheet-ability-toggle" id="label5" value="1" name="attr_ab5">
+                <label for="label5"><span>건축학</span></label>
+                <div class="sheet-ability-icon2">학식</div>
+              </td>
+              <td>
+                <input type="checkbox" class="sheet-ability-toggle" id="label6" value="1" name="attr_ab6">
+                <label for="label6"><span>오컬트</span></label>
+                <div class="sheet-ability-icon2">학식</div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <input type="checkbox" class="sheet-ability-toggle" id="label7" value="1" name="attr_ab7">
+                <label for="label7"><span>경찰 상대</span></label>
+                <div class="sheet-ability-icon3">대인</div>
+              </td>
+              <td>
+                <input type="checkbox" class="sheet-ability-toggle" id="label8" value="1" name="attr_ab8">
+                <label for="label8"><span>위협</span></label>
+                <div class="sheet-ability-icon3">대인</div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <input type="checkbox" class="sheet-ability-toggle" id="label9" value="1" name="attr_ab9">
+                <label for="label9"><span>고고학</span></label>
+                <div class="sheet-ability-icon2">학식</div>
+              </td>
+              <td>
+                <input type="checkbox" class="sheet-ability-toggle" id="label10" value="1" name="attr_ab10">
+                <label for="label10"><span>의료</span></label>
+                <div class="sheet-ability-icon2">학식</div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <input type="checkbox" class="sheet-ability-toggle" id="label11" value="1" name="attr_ab11">
+                <label for="label11"><span>고무</span></label>
+                <div class="sheet-ability-icon3">대인</div>
+              </td>
+              <td>
+                <input type="checkbox" class="sheet-ability-toggle" id="label12" value="1" name="attr_ab12">
+                <label for="label12"><span>인류학</span></label>
+                <div class="sheet-ability-icon2">학식</div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <input type="checkbox" class="sheet-ability-toggle" id="label13" value="1" name="attr_ab13">
+                <label for="label13"><span>공예</span></label>
+                <div class="sheet-ability-icon1">기술</div>
+              </td>
+              <td>
+                <input type="checkbox" class="sheet-ability-toggle" id="label14" value="1" name="attr_ab14">
+                <label for="label14"><span>자료 조사</span></label>
+                <div class="sheet-ability-icon1">학식</div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <input type="checkbox" class="sheet-ability-toggle" id="label15" value="1" name="attr_ab15">
+                <label for="label15"><span>관료제</span></label>
+                <div class="sheet-ability-icon3">대인</div>
+              </td>
+              <td>
+                <input type="checkbox" class="sheet-ability-toggle" id="label16" value="1" name="attr_ab16">
+                <label for="label16"><span>자연 지식</span></label>
+                <div class="sheet-ability-icon1">기술</div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <input type="checkbox" class="sheet-ability-toggle" id="label17" value="1" name="attr_ab17">
+                <label for="label17"><span>구비전승</span></label>
+                <div class="sheet-ability-icon3">대인</div>
+              </td>
+              <td>
+                <input type="checkbox" class="sheet-ability-toggle" id="label18" value="1" name="attr_ab18">
+                <label for="label18"><span>종교학</span></label>
+                <div class="sheet-ability-icon2">학식</div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <input type="checkbox" class="sheet-ability-toggle" id="label19" value="1" name="attr_ab19">
+                <label for="label19"><span>물리학</span></label>
+                <div class="sheet-ability-icon2">학식</div>
+              </td>
+              <td>
+                <input type="checkbox" class="sheet-ability-toggle" id="label20" value="1" name="attr_ab20">
+                <label for="label20"><span>증거물 수집</span></label>
+                <div class="sheet-ability-icon3">대인</div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <input type="checkbox" class="sheet-ability-toggle" id="label21" value="1" name="attr_ab21">
+                <label for="label21"><span>미술사</span></label>
+                <div class="sheet-ability-icon2">학식</div>
+              </td>
+              <td>
+                <input type="checkbox" class="sheet-ability-toggle" id="label22" value="1" name="attr_ab22">
+                <label for="label22"><span>지질학</span></label>
+                <div class="sheet-ability-icon2">학식</div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <input type="checkbox" class="sheet-ability-toggle" id="label23" value="1" name="attr_ab23">
+                <label for="label23"><span>법률</span></label>
+                <div class="sheet-ability-icon2">학식</div>
+              </td>
+              <td>
+                <input type="checkbox" class="sheet-ability-toggle" id="label24" value="1" name="attr_ab24">
+                <label for="label24"><span>진실 판별</span></label>
+                <div class="sheet-ability-icon3">대인</div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <input type="checkbox" class="sheet-ability-toggle" id="label25" value="1" name="attr_ab25">
+                <label for="label25"><span>생물학</span></label>
+                <div class="sheet-ability-icon2">학식</div>
+              </td>
+              <td>
+                <input type="checkbox" class="sheet-ability-toggle" id="label26" value="1" name="attr_ab26">
+                <label for="label26"><span>천문학</span></label>
+                <div class="sheet-ability-icon2">학식</div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <input type="checkbox" class="sheet-ability-toggle" id="label27" value="1" name="attr_ab27">
+                <label for="label27"><span>심리학</span></label>
+                <div class="sheet-ability-icon3">대인</div>
+              </td>
+              <td>
+                <input type="checkbox" class="sheet-ability-toggle" id="label28" value="1" name="attr_ab28">
+                <label for="label28"><span>촬영</span></label>
+                <div class="sheet-ability-icon1">기술</div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <input type="checkbox" class="sheet-ability-toggle" id="label29" value="1" name="attr_ab29">
+                <label for="label29"><span>아첨</span></label>
+                <div class="sheet-ability-icon3">대인</div>
+              </td>
+              <td>
+                <input type="checkbox" class="sheet-ability-toggle" id="label30" value="1" name="attr_ab30">
+                <label for="label30"><span>크툴루 신화</span></label>
+                <div class="sheet-ability-icon2">학식</div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <input type="checkbox" class="sheet-ability-toggle" id="label31" value="1" name="attr_ab31">
+                <label for="label31"><span>안심</span></label>
+                <div class="sheet-ability-icon3">대인</div>
+              </td>
+              <td>
+                <input type="checkbox" class="sheet-ability-toggle" id="label32" value="1" name="attr_ab32">
+                <label for="label32"><span>화학</span></label>
+                <div class="sheet-ability-icon1">기술</div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <input type="checkbox" class="sheet-ability-toggle" id="label33" value="1" name="attr_ab33">
+                <label for="label33"><span>암호</span></label>
+                <div class="sheet-ability-icon2">학식</div>
+              </td>
+              <td>
+                <input type="checkbox" class="sheet-ability-toggle" id="label34" value="1" name="attr_ab34">
+                <label for="label34"><span>회계</span></label>
+                <div class="sheet-ability-icon2">학식</div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <input type="checkbox" class="sheet-ability-toggle" id="label35" value="1" name="attr_ab35">
+                <label for="label35"><span>약학</span></label>
+                <div class="sheet-ability-icon1">기술</div>
+              </td>
+              <td>
+                <input type="checkbox" class="sheet-ability-toggle" id="label36" value="1" name="attr_ab36">
+                <label for="label36"><span>흥정</span></label>
+                <div class="sheet-ability-icon3">대인</div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <input type="checkbox" class="sheet-ability-toggle" id="label37" value="1" name="attr_ab37">
+                <label for="label37"><span>언어</span></label>
+                <div class="sheet-ability-icon2">학식</div>
+              </td>
+              <td>
+                <input type="checkbox" class="sheet-ability-toggle" id="label38" value="1" name="attr_ab38">
+                <label for="label38"><span><input type="text" name="attr_ability-38" value="" placeholder="기능 이름"></span></label>
+                <div class="sheet-ability-icon7">
+                  <select name="attr_ability-38-icon" id="ab38-icon">
+                    <option value="1">기술</option>
+                    <option value="2">학식</option>
+                    <option value="3">대인</option>
+                  </select>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="sheet-ability-total">
+          <div class="sheet-total">
+            <span>보유 기능 수</span>
+            <input type="number" name="attr_abilityTotal1" value="0" min="0">
+          </div>
+        </div>
+      </div>
+  
+      <div class="sheet-mid-right">
+        <h3>일반기능</h3>
+        <div class="sheet-tab-toggle">
+          <input type="hidden" class="sheet-tabstoggle" name="attr_growTab" value="off">
+          <button type="action" name="act_off">판정</button>
+          <button type="action" name="act_on">성장</button>
+          <div class="sheet-ability-checkbox">
+            <table>
+              <tr>
+                <td>
+                  <input type="checkbox" class="sheet-grow" id="growlabel1" name="attr_g1" value="1">
+                  <label for="growlabel1"></label>
+                  <input type="checkbox" class="sheet-grow" id="growlabel2" name="attr_g2" value="1">
+                  <label for="growlabel2"></label>
+                  <input type="checkbox" class="sheet-grow" id="growlabel3" name="attr_g3" value="1">
+                  <label for="growlabel3"></label>
+                </td>
+                <td>
+                  <input type="number" name="attr_total1" value="0" min="0" max="3"> / <span>3</span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <input type="checkbox" class="sheet-grow" id="growlabel4" name="attr_g4" value="1">
+                  <label for="growlabel4"></label>
+                  <input type="checkbox" class="sheet-grow" id="growlabel5" name="attr_g5" value="1">
+                  <label for="growlabel5"></label>
+                  <input type="checkbox" class="sheet-grow" id="growlabel6" name="attr_g6" value="1">
+                  <label for="growlabel6"></label>
+                </td>
+                <td>
+                  <input type="number" name="attr_total2" value="0" min="0" max="3"> / <span>3</span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <input type="checkbox" class="sheet-grow" id="growlabel7" name="attr_g7" value="1">
+                  <label for="growlabel7"></label>
+                  <input type="checkbox" class="sheet-grow" id="growlabel8" name="attr_g8" value="1">
+                  <label for="growlabel8"></label>
+                  <input type="checkbox" class="sheet-grow" id="growlabel9" name="attr_g9" value="1">
+                  <label for="growlabel9"></label>
+                </td>
+                <td>
+                  <input type="number" name="attr_total3" value="0" min="0" max="3"> / <span>3</span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <input type="checkbox" class="sheet-grow" id="growlabel10" name="attr_g10" value="1">
+                  <label for="growlabel10"></label>
+                  <input type="checkbox" class="sheet-grow" id="growlabel11" name="attr_g11" value="1">
+                  <label for="growlabel11"></label>
+                  <input type="checkbox" class="sheet-grow" id="growlabel12" name="attr_g12" value="1">
+                  <label for="growlabel12"></label>
+                </td>
+                <td>
+                  <input type="number" name="attr_total4" value="0" min="0" max="3"> / <span>3</span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <input type="checkbox" class="sheet-grow" id="growlabel13" name="attr_g13" value="1">
+                  <label for="growlabel13"></label>
+                  <input type="checkbox" class="sheet-grow" id="growlabel14" name="attr_g14" value="1">
+                  <label for="growlabel14"></label>
+                  <input type="checkbox" class="sheet-grow" id="growlabel15" name="attr_g15" value="1">
+                  <label for="growlabel15"></label>
+                </td>
+                <td>
+                  <input type="number" name="attr_total5" value="0" min="0" max="3"> / <span>3</span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <input type="checkbox" class="sheet-grow" id="growlabel16" name="attr_g16" value="1">
+                  <label for="growlabel16"></label>
+                  <input type="checkbox" class="sheet-grow" id="growlabel17" name="attr_g17" value="1">
+                  <label for="growlabel17"></label>
+                  <input type="checkbox" class="sheet-grow" id="growlabel18" name="attr_g18" value="1">
+                  <label for="growlabel18"></label>
+                </td>
+                <td>
+                  <input type="number" name="attr_total6" value="0" min="0" max="3"> / <span>3</span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <input type="checkbox" class="sheet-grow" id="growlabel19" name="attr_g19" value="1">
+                  <label for="growlabel19"></label>
+                  <input type="checkbox" class="sheet-grow" id="growlabel20" name="attr_g20" value="1">
+                  <label for="growlabel20"></label>
+                  <input type="checkbox" class="sheet-grow" id="growlabel21" name="attr_g21" value="1">
+                  <label for="growlabel21"></label>
+                </td>
+                <td>
+                  <input type="number" name="attr_total7" value="0" min="0" max="3"> / <span>3</span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <input type="checkbox" class="sheet-grow" id="growlabel22" name="attr_g22" value="1">
+                  <label for="growlabel22"></label>
+                  <input type="checkbox" class="sheet-grow" id="growlabel23" name="attr_g23" value="1">
+                  <label for="growlabel23"></label>
+                  <input type="checkbox" class="sheet-grow" id="growlabel24" name="attr_g24" value="1">
+                  <label for="growlabel24"></label>
+                </td>
+                <td>
+                  <input type="number" name="attr_total8" value="0" min="0" max="3"> / <span>3</span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <input type="checkbox" class="sheet-grow" id="growlabel25" name="attr_g25" value="1">
+                  <label for="growlabel25"></label>
+                  <input type="checkbox" class="sheet-grow" id="growlabel26" name="attr_g26" value="1">
+                  <label for="growlabel26"></label>
+                  <input type="checkbox" class="sheet-grow" id="growlabel27" name="attr_g27" value="1">
+                  <label for="growlabel27"></label>
+                </td>
+                <td>
+                  <input type="number" name="attr_total9" value="0" min="0" max="3"> / <span>3</span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <input type="checkbox" class="sheet-grow" id="growlabel28" name="attr_g28" value="1">
+                  <label for="growlabel28"></label>
+                  <input type="checkbox" class="sheet-grow" id="growlabel29" name="attr_g29" value="1">
+                  <label for="growlabel29"></label>
+                  <input type="checkbox" class="sheet-grow" id="growlabel30" name="attr_g30" value="1">
+                  <label for="growlabel30"></label>
+                </td>
+                <td>
+                  <input type="number" name="attr_total10" value="0" min="0" max="3"> / <span>3</span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <input type="checkbox" class="sheet-grow" id="growlabel31" name="attr_g31" value="1">
+                  <label for="growlabel31"></label>
+                  <input type="checkbox" class="sheet-grow" id="growlabel32" name="attr_g32" value="1">
+                  <label for="growlabel32"></label>
+                  <input type="checkbox" class="sheet-grow" id="growlabel33" name="attr_g33" value="1">
+                  <label for="growlabel33"></label>
+                </td>
+                <td>
+                  <input type="number" name="attr_total11" value="0" min="0" max="3"> / <span>3</span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <input type="checkbox" class="sheet-grow" id="growlabel34" name="attr_g34" value="1">
+                  <label for="growlabel34"></label>
+                  <input type="checkbox" class="sheet-grow" id="growlabel35" name="attr_g35" value="1">
+                  <label for="growlabel35"></label>
+                  <input type="checkbox" class="sheet-grow" id="growlabel36" name="attr_g36" value="1">
+                  <label for="growlabel36"></label>
+                </td>
+                <td>
+                  <input type="number" name="attr_total12" value="0" min="0" max="3"> / <span>3</span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <input type="checkbox" class="sheet-grow" id="growlabel37" name="attr_g37" value="1">
+                  <label for="growlabel37"></label>
+                  <input type="checkbox" class="sheet-grow" id="growlabel38" name="attr_g38" value="1">
+                  <label for="growlabel38"></label>
+                  <input type="checkbox" class="sheet-grow" id="growlabel39" name="attr_g39" value="1">
+                  <label for="growlabel39"></label>
+                </td>
+                <td>
+                  <input type="number" name="attr_total13" value="0" min="0" max="3"> / <span>3</span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <input type="checkbox" class="sheet-grow" id="growlabel40" name="attr_g40" value="1">
+                  <label for="growlabel40"></label>
+                  <input type="checkbox" class="sheet-grow" id="growlabel41" name="attr_g41" value="1">
+                  <label for="growlabel41"></label>
+                  <input type="checkbox" class="sheet-grow" id="growlabel42" name="attr_g42" value="1">
+                  <label for="growlabel42"></label>
+                </td>
+                <td>
+                  <input type="number" name="attr_total14" value="0" min="0" max="3"> / <span>3</span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <input type="checkbox" class="sheet-grow" id="growlabel43" name="attr_g43" value="1">
+                  <label for="growlabel43"></label>
+                  <input type="checkbox" class="sheet-grow" id="growlabel44" name="attr_g44" value="1">
+                  <label for="growlabel44"></label>
+                  <input type="checkbox" class="sheet-grow" id="growlabel45" name="attr_g45" value="1">
+                  <label for="growlabel45"></label>
+                </td>
+                <td>
+                  <input type="number" name="attr_total15" value="0" min="0" max="3"> / <span>3</span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <input type="checkbox" class="sheet-grow" id="growlabel46" name="attr_g46" value="1">
+                  <label for="growlabel46"></label>
+                  <input type="checkbox" class="sheet-grow" id="growlabel47" name="attr_g47" value="1">
+                  <label for="growlabel47"></label>
+                  <input type="checkbox" class="sheet-grow" id="growlabel48" name="attr_g48" value="1">
+                  <label for="growlabel48"></label>
+                </td>
+                <td>
+                  <input type="number" name="attr_total16" value="0" min="0" max="3"> / <span>3</span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <input type="checkbox" class="sheet-grow" id="growlabel49" name="attr_g49" value="1">
+                  <label for="growlabel49"></label>
+                  <input type="checkbox" class="sheet-grow" id="growlabel50" name="attr_g50" value="1">
+                  <label for="growlabel50"></label>
+                  <input type="checkbox" class="sheet-grow" id="growlabel51" name="attr_g51" value="1">
+                  <label for="growlabel51"></label>
+                </td>
+                <td>
+                  <input type="number" name="attr_total17" value="0" min="0" max="3"> / <span>3</span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <input type="checkbox" class="sheet-grow" id="growlabel52" name="attr_g52" value="1">
+                  <label for="growlabel52"></label>
+                  <input type="checkbox" class="sheet-grow" id="growlabel53" name="attr_g53" value="1">
+                  <label for="growlabel53"></label>
+                  <input type="checkbox" class="sheet-grow" id="growlabel54" name="attr_g54" value="1">
+                  <label for="growlabel54"></label>
+                </td>
+                <td>
+                  <input type="number" name="attr_total18" value="0" min="0" max="3"> / <span>3</span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <input type="checkbox" class="sheet-grow" id="growlabel55" name="attr_g55" value="1">
+                  <label for="growlabel55"></label>
+                  <input type="checkbox" class="sheet-grow" id="growlabel56" name="attr_g56" value="1">
+                  <label for="growlabel56"></label>
+                  <input type="checkbox" class="sheet-grow" id="growlabel57" name="attr_g57" value="1">
+                  <label for="growlabel57"></label>
+                </td>
+                <td>
+                  <input type="number" name="attr_total19" value="0" min="0" max="3"> / <span>3</span>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <div class="sheet-ability">
+          <table>
+            <tr>
+              <td>
+                <input type="checkbox" class="sheet-ability-toggle" id="label39" value="1" name="attr_st1">
+                <label for="label39"><span>기계</span></label>
+                <div class="sheet-ability-icon4">조작</div>
+              </td>
+              <td>
+                <input type="checkbox" class="sheet-ability-dice" id="dicelabel1" value="1" name="attr_stdice1">
+                <label for="dicelabel1"></label>
+                <input type="checkbox" class="sheet-ability-dice" id="dicelabel2" value="1" name="attr_stdice2">
+                <label for="dicelabel2"></label>
+                <input type="checkbox" class="sheet-ability-dice" id="dicelabel3" value="1" name="attr_stdice3">
+                <label for="dicelabel3"></label>
+                <input type="hidden" name="attr_diceCheck1" value="0">
+                <input type="hidden" name="attr_diceCheck2" value="0">
+                <input type="hidden" name="attr_diceCheck3" value="0">
+              </td>
+              <td>
+                <span>+</span>
+                <input type="number" class="sheet-bonus" name="attr_bonus-st1" value="0" min="0">
+                <span>-</span>
+                <input type="number" class="sheet-bonus" name="attr_penalty-st1" value="0" min="0">
+              </td>
+              <td>
+                <button type="roll" name="roll-st1" value="&{template:ability} {{icon-class=[[1]]}} {{roll1=[[1d6]]}} {{roll2=[[1d6]]}} {{roll3=[[1d6]]}} {{class=조작}} {{name=기계}} {{bonus=[[@{bonus-st1}]]}} {{bonus-v=@{bonus-st1}}} {{penalty=[[@{penalty-st1}]]}} {{penalty-v=@{penalty-st1}}} {{dice1=[[@{diceCheck1}]]}} {{dice2=[[@{diceCheck2}]]}} {{dice3=[[@{diceCheck3}]]}}"></button>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <input type="checkbox" class="sheet-ability-toggle" id="label40" value="1" name="attr_st2">
+                <label for="label40"><span>냉철</span></label>
+                <div class="sheet-ability-icon5">정신</div>
+              </td>
+              <td>
+                <input type="checkbox" class="sheet-ability-dice" id="dicelabel4" value="1" name="attr_stdice4">
+                <label for="dicelabel4"></label>
+                <input type="checkbox" class="sheet-ability-dice" id="dicelabel5" value="1" name="attr_stdice5">
+                <label for="dicelabel5"></label>
+                <input type="checkbox" class="sheet-ability-dice" id="dicelabel6" value="1" name="attr_stdice6">
+                <label for="dicelabel6"></label>
+                <input type="hidden" name="attr_diceCheck4" value="0">
+                <input type="hidden" name="attr_diceCheck5" value="0">
+                <input type="hidden" name="attr_diceCheck6" value="0">
+              </td>
+              <td>
+                <span>+</span>
+                <input type="number" class="sheet-bonus" name="attr_bonus-st2" value="0" min="0">
+                <span>-</span>
+                <input type="number" class="sheet-bonus" name="attr_penalty-st2" value="0" min="0">
+              </td>
+              <td>
+                <button type="roll" name="roll-st2" value="&{template:ability} {{icon-class=[[2]]}} {{roll1=[[1d6]]}} {{roll2=[[1d6]]}} {{roll3=[[1d6]]}} {{class=정신}} {{name=냉철}} {{bonus=[[@{bonus-st2}]]}} {{bonus-v=@{bonus-st2}}} {{penalty=[[@{penalty-st2}]]}} {{penalty-v=@{penalty-st2}}} {{dice1=[[@{diceCheck4}]]}} {{dice2=[[@{diceCheck5}]]}} {{dice3=[[@{diceCheck6}]]}}"></button>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <input type="checkbox" class="sheet-ability-toggle" id="label41" value="1" name="attr_st3">
+                <label for="label41"><span>도망</span></label>
+                <div class="sheet-ability-icon6">신체</div>
+              </td>
+              <td>
+                <input type="checkbox" class="sheet-ability-dice" id="dicelabel7" value="1" name="attr_stdice7">
+                <label for="dicelabel7"></label>
+                <input type="checkbox" class="sheet-ability-dice" id="dicelabel8" value="1" name="attr_stdice8">
+                <label for="dicelabel8"></label>
+                <input type="checkbox" class="sheet-ability-dice" id="dicelabel9" value="1" name="attr_stdice9">
+                <label for="dicelabel9"></label>
+                <input type="hidden" name="attr_diceCheck7" value="0">
+                <input type="hidden" name="attr_diceCheck8" value="0">
+                <input type="hidden" name="attr_diceCheck9" value="0">
+              </td>
+              <td>
+                <span>+</span>
+                <input type="number" class="sheet-bonus" name="attr_bonus-st3" value="0" min="0">
+                <span>-</span>
+                <input type="number" class="sheet-bonus" name="attr_penalty-st3" value="0" min="0">
+              </td>
+              <td>
+                <button type="roll" name="roll-st3" value="&{template:ability} {{icon-class=[[3]]}} {{roll1=[[1d6]]}} {{roll2=[[1d6]]}} {{roll3=[[1d6]]}} {{class=신체}} {{name=도망}} {{bonus=[[@{bonus-st3}]]}} {{bonus-v=@{bonus-st3}}} {{penalty=[[@{penalty-st3}]]}} {{penalty-v=@{penalty-st3}}} {{dice1=[[@{diceCheck7}]]}} {{dice2=[[@{diceCheck8}]]}} {{dice3=[[@{diceCheck9}]]}}"></button>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <input type="checkbox" class="sheet-ability-toggle" id="label42" value="1" name="attr_st4">
+                <label for="label42"><span>마법</span></label>
+                <div class="sheet-ability-icon5">정신</div>
+              </td>
+              <td>
+                <input type="checkbox" class="sheet-ability-dice" id="dicelabel10" value="1" name="attr_stdice10">
+                <label for="dicelabel10"></label>
+                <input type="checkbox" class="sheet-ability-dice" id="dicelabel11" value="1" name="attr_stdice11">
+                <label for="dicelabel11"></label>
+                <input type="checkbox" class="sheet-ability-dice" id="dicelabel12" value="1" name="attr_stdice12">
+                <label for="dicelabel12"></label>
+                <input type="hidden" name="attr_diceCheck10" value="0">
+                <input type="hidden" name="attr_diceCheck11" value="0">
+                <input type="hidden" name="attr_diceCheck12" value="0">
+              </td>
+              <td>
+                <span>+</span>
+                <input type="number" class="sheet-bonus" name="attr_bonus-st4" value="0" min="0">
+                <span>-</span>
+                <input type="number" class="sheet-bonus" name="attr_penalty-st4" value="0" min="0">
+              </td>
+              <td>
+                <button type="roll" name="roll-st4" value="&{template:ability} {{icon-class=[[2]]}} {{roll1=[[1d6]]}} {{roll2=[[1d6]]}} {{roll3=[[1d6]]}} {{class=정신}} {{name=마법}} {{bonus=[[@{bonus-st4}]]}} {{bonus-v=@{bonus-st4}}} {{penalty=[[@{penalty-st4}]]}} {{penalty-v=@{penalty-st4}}} {{dice1=[[@{diceCheck10}]]}} {{dice2=[[@{diceCheck11}]]}} {{dice3=[[@{diceCheck12}]]}}"></button>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <input type="checkbox" class="sheet-ability-toggle" id="label43" value="1" name="attr_st5">
+                <label for="label43"><span>미행</span></label>
+                <div class="sheet-ability-icon6">신체</div>
+              </td>
+              <td>
+                <input type="checkbox" class="sheet-ability-dice" id="dicelabel13" value="1" name="attr_stdice13">
+                <label for="dicelabel13"></label>
+                <input type="checkbox" class="sheet-ability-dice" id="dicelabel14" value="1" name="attr_stdice14">
+                <label for="dicelabel14"></label>
+                <input type="checkbox" class="sheet-ability-dice" id="dicelabel15" value="1" name="attr_stdice15">
+                <label for="dicelabel15"></label>
+                <input type="hidden" name="attr_diceCheck13" value="0">
+                <input type="hidden" name="attr_diceCheck14" value="0">
+                <input type="hidden" name="attr_diceCheck15" value="0">
+              </td>
+              <td>
+                <span>+</span>
+                <input type="number" class="sheet-bonus" name="attr_bonus-st5" value="0" min="0">
+                <span>-</span>
+                <input type="number" class="sheet-bonus" name="attr_penalty-st5" value="0" min="0">
+              </td>
+              <td>
+                <button type="roll" name="roll-st5" value="&{template:ability} {{icon-class=[[3]]}} {{roll1=[[1d6]]}} {{roll2=[[1d6]]}} {{roll3=[[1d6]]}} {{class=신체}} {{name=미행}} {{bonus=[[@{bonus-st5}]]}} {{bonus-v=@{bonus-st5}}} {{penalty=[[@{penalty-st5}]]}} {{penalty-v=@{penalty-st5}}} {{dice1=[[@{diceCheck13}]]}} {{dice2=[[@{diceCheck14}]]}} {{dice3=[[@{diceCheck15}]]}}"></button>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <input type="checkbox" class="sheet-ability-toggle" id="label44" value="1" name="attr_st6">
+                <label for="label44"><span>변장</span></label>
+                <div class="sheet-ability-icon4">조작</div>
+              </td>
+              <td>
+                <input type="checkbox" class="sheet-ability-dice" id="dicelabel16" value="1" name="attr_stdice16">
+                <label for="dicelabel16"></label>
+                <input type="checkbox" class="sheet-ability-dice" id="dicelabel17" value="1" name="attr_stdice17">
+                <label for="dicelabel17"></label>
+                <input type="checkbox" class="sheet-ability-dice" id="dicelabel18" value="1" name="attr_stdice18">
+                <label for="dicelabel18"></label>
+                <input type="hidden" name="attr_diceCheck16" value="0">
+                <input type="hidden" name="attr_diceCheck17" value="0">
+                <input type="hidden" name="attr_diceCheck18" value="0">
+              </td>
+              <td>
+                <span>+</span>
+                <input type="number" class="sheet-bonus" name="attr_bonus-st6" value="0" min="0">
+                <span>-</span>
+                <input type="number" class="sheet-bonus" name="attr_penalty-st6" value="0" min="0">
+              </td>
+              <td>
+                <button type="roll" name="roll-st6" value="&{template:ability} {{icon-class=[[1]]}} {{roll1=[[1d6]]}} {{roll2=[[1d6]]}} {{roll3=[[1d6]]}} {{class=조작}} {{name=변장}} {{bonus=[[@{bonus-st6}]]}} {{bonus-v=@{bonus-st6}}} {{penalty=[[@{penalty-st6}]]}} {{penalty-v=@{penalty-st6}}} {{dice1=[[@{diceCheck16}]]}} {{dice2=[[@{diceCheck17}]]}} {{dice3=[[@{diceCheck18}]]}}"></button>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <input type="checkbox" class="sheet-ability-toggle" id="label45" value="1" name="attr_st7">
+                <label for="label45"><span>싸움</span></label>
+                <div class="sheet-ability-icon6">신체</div>
+              </td>
+              <td>
+                <input type="checkbox" class="sheet-ability-dice" id="dicelabel19" value="1" name="attr_stdice19">
+                <label for="dicelabel19"></label>
+                <input type="checkbox" class="sheet-ability-dice" id="dicelabel20" value="1" name="attr_stdice20">
+                <label for="dicelabel20"></label>
+                <input type="checkbox" class="sheet-ability-dice" id="dicelabel21" value="1" name="attr_stdice21">
+                <label for="dicelabel21"></label>
+                <input type="hidden" name="attr_diceCheck19" value="0">
+                <input type="hidden" name="attr_diceCheck20" value="0">
+                <input type="hidden" name="attr_diceCheck21" value="0">
+              </td>
+              <td>
+                <span>+</span>
+                <input type="number" class="sheet-bonus" name="attr_bonus-st7" value="0" min="0">
+                <span>-</span>
+                <input type="number" class="sheet-bonus" name="attr_penalty-st7" value="0" min="0">
+              </td>
+              <td>
+                <button type="roll" name="roll-st7" value="&{template:ability} {{icon-class=[[3]]}} {{roll1=[[1d6]]}} {{roll2=[[1d6]]}} {{roll3=[[1d6]]}} {{class=신체}} {{name=싸움}} {{bonus=[[@{bonus-st7}]]}} {{bonus-v=@{bonus-st7}}} {{penalty=[[@{penalty-st7}]]}} {{penalty-v=@{penalty-st7}}} {{dice1=[[@{diceCheck19}]]}} {{dice2=[[@{diceCheck20}]]}} {{dice3=[[@{diceCheck21}]]}}"></button>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <input type="checkbox" class="sheet-ability-toggle" id="label46" value="1" name="attr_st8">
+                <label for="label46"><span>운동</span></label>
+                <div class="sheet-ability-icon6">신체</div>
+              </td>
+              <td>
+                <input type="checkbox" class="sheet-ability-dice" id="dicelabel22" value="1" name="attr_stdice22">
+                <label for="dicelabel22"></label>
+                <input type="checkbox" class="sheet-ability-dice" id="dicelabel23" value="1" name="attr_stdice23">
+                <label for="dicelabel23"></label>
+                <input type="checkbox" class="sheet-ability-dice" id="dicelabel24" value="1" name="attr_stdice24">
+                <label for="dicelabel24"></label>
+                <input type="hidden" name="attr_diceCheck22" value="0">
+                <input type="hidden" name="attr_diceCheck23" value="0">
+                <input type="hidden" name="attr_diceCheck24" value="0">
+              </td>
+              <td>
+                <span>+</span>
+                <input type="number" class="sheet-bonus" name="attr_bonus-st8" value="0" min="0">
+                <span>-</span>
+                <input type="number" class="sheet-bonus" name="attr_penalty-st8" value="0" min="0">
+              </td>
+              <td>
+                <button type="roll" name="roll-st8" value="&{template:ability} {{icon-class=[[3]]}} {{roll1=[[1d6]]}} {{roll2=[[1d6]]}} {{roll3=[[1d6]]}} {{class=신체}} {{name=운동}} {{bonus=[[@{bonus-st8}]]}} {{bonus-v=@{bonus-st8}}} {{penalty=[[@{penalty-st8}]]}} {{penalty-v=@{penalty-st8}}} {{dice1=[[@{diceCheck22}]]}} {{dice2=[[@{diceCheck23}]]}} {{dice3=[[@{diceCheck24}]]}}"></button>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <input type="checkbox" class="sheet-ability-toggle" id="label47" value="1" name="attr_st9">
+                <label for="label47"><span>운전</span></label>
+                <div class="sheet-ability-icon4">조작</div>
+              </td>
+              <td>
+                <input type="checkbox" class="sheet-ability-dice" id="dicelabel25" value="1" name="attr_stdice25">
+                <label for="dicelabel25"></label>
+                <input type="checkbox" class="sheet-ability-dice" id="dicelabel26" value="1" name="attr_stdice26">
+                <label for="dicelabel26"></label>
+                <input type="checkbox" class="sheet-ability-dice" id="dicelabel27" value="1" name="attr_stdice27">
+                <label for="dicelabel27"></label>
+                <input type="hidden" name="attr_diceCheck25" value="0">
+                <input type="hidden" name="attr_diceCheck26" value="0">
+                <input type="hidden" name="attr_diceCheck27" value="0">
+              </td>
+              <td>
+                <span>+</span>
+                <input type="number" class="sheet-bonus" name="attr_bonus-st9" value="0" min="0">
+                <span>-</span>
+                <input type="number" class="sheet-bonus" name="attr_penalty-st9" value="0" min="0">
+              </td>
+              <td>
+                <button type="roll" name="roll-st9" value="&{template:ability} {{icon-class=[[1]]}} {{roll1=[[1d6]]}} {{roll2=[[1d6]]}} {{roll3=[[1d6]]}} {{class=조작}} {{name=운전}} {{bonus=[[@{bonus-st9}]]}} {{bonus-v=@{bonus-st9}}} {{penalty=[[@{penalty-st9}]]}} {{penalty-v=@{penalty-st9}}} {{dice1=[[@{diceCheck25}]]}} {{dice2=[[@{diceCheck26}]]}} {{dice3=[[@{diceCheck27}]]}}"></button>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <input type="checkbox" class="sheet-ability-toggle" id="label48" value="1" name="attr_st10">
+                <label for="label48"><span>위험 감지</span></label>
+                <div class="sheet-ability-icon5">정신</div>
+              </td>
+              <td>
+                <input type="checkbox" class="sheet-ability-dice" id="dicelabel28" value="1" name="attr_stdice28">
+                <label for="dicelabel28"></label>
+                <input type="checkbox" class="sheet-ability-dice" id="dicelabel29" value="1" name="attr_stdice29">
+                <label for="dicelabel29"></label>
+                <input type="checkbox" class="sheet-ability-dice" id="dicelabel30" value="1" name="attr_stdice30">
+                <label for="dicelabel30"></label>
+                <input type="hidden" name="attr_diceCheck28" value="0">
+                <input type="hidden" name="attr_diceCheck29" value="0">
+                <input type="hidden" name="attr_diceCheck30" value="0">
+              </td>
+              <td>
+                <span>+</span>
+                <input type="number" class="sheet-bonus" name="attr_bonus-st10" value="0" min="0">
+                <span>-</span>
+                <input type="number" class="sheet-bonus" name="attr_penalty-st10" value="0" min="0">
+              </td>
+              <td>
+                <button type="roll" name="roll-st10" value="&{template:ability} {{icon-class=[[2]]}} {{roll1=[[1d6]]}} {{roll2=[[1d6]]}} {{roll3=[[1d6]]}} {{class=정신}} {{name=위험 감지}} {{bonus=[[@{bonus-st10}]]}} {{bonus-v=@{bonus-st10}}} {{penalty=[[@{penalty-st10}]]}} {{penalty-v=@{penalty-st10}}} {{dice1=[[@{diceCheck28}]]}} {{dice2=[[@{diceCheck29}]]}} {{dice3=[[@{diceCheck30}]]}}"></button>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <input type="checkbox" class="sheet-ability-toggle" id="label49" value="1" name="attr_st11">
+                <label for="label49"><span>은닉</span></label>
+                <div class="sheet-ability-icon4">조작</div>
+              </td>
+              <td>
+                <input type="checkbox" class="sheet-ability-dice" id="dicelabel31" value="1" name="attr_stdice31">
+                <label for="dicelabel31"></label>
+                <input type="checkbox" class="sheet-ability-dice" id="dicelabel32" value="1" name="attr_stdice32">
+                <label for="dicelabel32"></label>
+                <input type="checkbox" class="sheet-ability-dice" id="dicelabel33" value="1" name="attr_stdice33">
+                <label for="dicelabel33"></label>
+                <input type="hidden" name="attr_diceCheck31" value="0">
+                <input type="hidden" name="attr_diceCheck32" value="0">
+                <input type="hidden" name="attr_diceCheck33" value="0">
+              </td>
+              <td>
+                <span>+</span>
+                <input type="number" class="sheet-bonus" name="attr_bonus-st11" value="0" min="0">
+                <span>-</span>
+                <input type="number" class="sheet-bonus" name="attr_penalty-st11" value="0" min="0">
+              </td>
+              <td>
+                <button type="roll" name="roll-st11" value="&{template:ability} {{icon-class=[[1]]}} {{roll1=[[1d6]]}} {{roll2=[[1d6]]}} {{roll3=[[1d6]]}} {{class=조작}} {{name=은닉}} {{bonus=[[@{bonus-st11}]]}} {{bonus-v=@{bonus-st11}}} {{penalty=[[@{penalty-st11}]]}} {{penalty-v=@{penalty-st11}}} {{dice1=[[@{diceCheck31}]]}} {{dice2=[[@{diceCheck32}]]}} {{dice3=[[@{diceCheck33}]]}}"></button>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <input type="checkbox" class="sheet-ability-toggle" id="label50" value="1" name="attr_st12">
+                <label for="label50"><span>은밀행동</span></label>
+                <div class="sheet-ability-icon6">신체</div>
+              </td>
+              <td>
+                <input type="checkbox" class="sheet-ability-dice" id="dicelabel34" value="1" name="attr_stdice34">
+                <label for="dicelabel34"></label>
+                <input type="checkbox" class="sheet-ability-dice" id="dicelabel35" value="1" name="attr_stdice35">
+                <label for="dicelabel35"></label>
+                <input type="checkbox" class="sheet-ability-dice" id="dicelabel36" value="1" name="attr_stdice36">
+                <label for="dicelabel36"></label>
+                <input type="hidden" name="attr_diceCheck34" value="0">
+                <input type="hidden" name="attr_diceCheck35" value="0">
+                <input type="hidden" name="attr_diceCheck36" value="0">
+              </td>
+              <td>
+                <span>+</span>
+                <input type="number" class="sheet-bonus" name="attr_bonus-st12" value="0" min="0">
+                <span>-</span>
+                <input type="number" class="sheet-bonus" name="attr_penalty-st12" value="0" min="0">
+              </td>
+              <td>
+                <button type="roll" name="roll-st12" value="&{template:ability} {{icon-class=[[3]]}} {{roll1=[[1d6]]}} {{roll2=[[1d6]]}} {{roll3=[[1d6]]}} {{class=신체}} {{name=은밀행동}} {{bonus=[[@{bonus-st12}]]}} {{bonus-v=@{bonus-st12}}} {{penalty=[[@{penalty-st12}]]}} {{penalty-v=@{penalty-st12}}} {{dice1=[[@{diceCheck34}]]}} {{dice2=[[@{diceCheck35}]]}} {{dice3=[[@{diceCheck36}]]}}"></button>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <input type="checkbox" class="sheet-ability-toggle" id="label51" value="1" name="attr_st13">
+                <label for="label51"><span>응급처치</span></label>
+                <div class="sheet-ability-icon4">조작</div>
+              </td>
+              <td>
+                <input type="checkbox" class="sheet-ability-dice" id="dicelabel37" value="1" name="attr_stdice37">
+                <label for="dicelabel37"></label>
+                <input type="checkbox" class="sheet-ability-dice" id="dicelabel38" value="1" name="attr_stdice38">
+                <label for="dicelabel38"></label>
+                <input type="checkbox" class="sheet-ability-dice" id="dicelabel39" value="1" name="attr_stdice39">
+                <label for="dicelabel39"></label>
+                <input type="hidden" name="attr_diceCheck37" value="0">
+                <input type="hidden" name="attr_diceCheck38" value="0">
+                <input type="hidden" name="attr_diceCheck39" value="0">
+              </td>
+              <td>
+                <span>+</span>
+                <input type="number" class="sheet-bonus" name="attr_bonus-st13" value="0" min="0">
+                <span>-</span>
+                <input type="number" class="sheet-bonus" name="attr_penalty-st13" value="0" min="0">
+              </td>
+              <td>
+                <button type="roll" name="roll-st13" value="&{template:ability} {{icon-class=[[1]]}} {{roll1=[[1d6]]}} {{roll2=[[1d6]]}} {{roll3=[[1d6]]}} {{class=조작}} {{name=응급처치}} {{bonus=[[@{bonus-st13}]]}} {{bonus-v=@{bonus-st13}}} {{penalty=[[@{penalty-st13}]]}} {{penalty-v=@{penalty-st13}}} {{dice1=[[@{diceCheck37}]]}} {{dice2=[[@{diceCheck38}]]}} {{dice3=[[@{diceCheck39}]]}}"></button>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <input type="checkbox" class="sheet-ability-toggle" id="label52" value="1" name="attr_st14">
+                <label for="label52"><span>정신분석</span></label>
+                <div class="sheet-ability-icon5">정신</div>
+              </td>
+              <td>
+                <input type="checkbox" class="sheet-ability-dice" id="dicelabel40" value="1" name="attr_stdice40">
+                <label for="dicelabel40"></label>
+                <input type="checkbox" class="sheet-ability-dice" id="dicelabel41" value="1" name="attr_stdice41">
+                <label for="dicelabel41"></label>
+                <input type="checkbox" class="sheet-ability-dice" id="dicelabel42" value="1" name="attr_stdice42">
+                <label for="dicelabel42"></label>
+                <input type="hidden" name="attr_diceCheck40" value="0">
+                <input type="hidden" name="attr_diceCheck41" value="0">
+                <input type="hidden" name="attr_diceCheck42" value="0">
+              </td>
+              <td>
+                <span>+</span>
+                <input type="number" class="sheet-bonus" name="attr_bonus-st14" value="0" min="0">
+                <span>-</span>
+                <input type="number" class="sheet-bonus" name="attr_penalty-st14" value="0" min="0">
+              </td>
+              <td>
+                <button type="roll" name="roll-st14" value="&{template:ability} {{icon-class=[[2]]}} {{roll1=[[1d6]]}} {{roll2=[[1d6]]}} {{roll3=[[1d6]]}} {{class=정신}} {{name=정신분석}} {{bonus=[[@{bonus-st14}]]}} {{bonus-v=@{bonus-st14}}} {{penalty=[[@{penalty-st14}]]}} {{penalty-v=@{penalty-st14}}} {{dice1=[[@{diceCheck40}]]}} {{dice2=[[@{diceCheck41}]]}} {{dice3=[[@{diceCheck42}]]}}"></button>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <input type="checkbox" class="sheet-ability-toggle" id="label53" value="1" name="attr_st15">
+                <label for="label53"><span>준비성</span></label>
+                <div class="sheet-ability-icon4">조작</div>
+              </td>
+              <td>
+                <input type="checkbox" class="sheet-ability-dice" id="dicelabel43" value="1" name="attr_stdice43">
+                <label for="dicelabel43"></label>
+                <input type="checkbox" class="sheet-ability-dice" id="dicelabel44" value="1" name="attr_stdice44">
+                <label for="dicelabel44"></label>
+                <input type="checkbox" class="sheet-ability-dice" id="dicelabel45" value="1" name="attr_stdice45">
+                <label for="dicelabel45"></label>
+                <input type="hidden" name="attr_diceCheck43" value="0">
+                <input type="hidden" name="attr_diceCheck44" value="0">
+                <input type="hidden" name="attr_diceCheck45" value="0">
+              </td>
+              <td>
+                <span>+</span>
+                <input type="number" class="sheet-bonus" name="attr_bonus-st15" value="0" min="0">
+                <span>-</span>
+                <input type="number" class="sheet-bonus" name="attr_penalty-st15" value="0" min="0">
+              </td>
+              <td>
+                <button type="roll" name="roll-st15" value="&{template:ability} {{icon-class=[[1]]}} {{roll1=[[1d6]]}} {{roll2=[[1d6]]}} {{roll3=[[1d6]]}} {{class=조작}} {{name=준비성}} {{bonus=[[@{bonus-st15}]]}} {{bonus-v=@{bonus-st15}}} {{penalty=[[@{penalty-st15}]]}} {{penalty-v=@{penalty-st15}}} {{dice1=[[@{diceCheck43}]]}} {{dice2=[[@{diceCheck44}]]}} {{dice3=[[@{diceCheck45}]]}}"></button>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <input type="checkbox" class="sheet-ability-toggle" id="label54" value="1" name="attr_st16">
+                <label for="label54"><span>최면술</span></label>
+                <div class="sheet-ability-icon5">정신</div>
+              </td>
+              <td>
+                <input type="checkbox" class="sheet-ability-dice" id="dicelabel46" value="1" name="attr_stdice46">
+                <label for="dicelabel46"></label>
+                <input type="checkbox" class="sheet-ability-dice" id="dicelabel47" value="1" name="attr_stdice47">
+                <label for="dicelabel47"></label>
+                <input type="checkbox" class="sheet-ability-dice" id="dicelabel48" value="1" name="attr_stdice48">
+                <label for="dicelabel48"></label>
+                <input type="hidden" name="attr_diceCheck46" value="0">
+                <input type="hidden" name="attr_diceCheck47" value="0">
+                <input type="hidden" name="attr_diceCheck48" value="0">
+              </td>
+              <td>
+                <span>+</span>
+                <input type="number" class="sheet-bonus" name="attr_bonus-st16" value="0" min="0">
+                <span>-</span>
+                <input type="number" class="sheet-bonus" name="attr_penalty-st16" value="0" min="0">
+              </td>
+              <td>
+                <button type="roll" name="roll-st16" value="&{template:ability} {{icon-class=[[2]]}} {{roll1=[[1d6]]}} {{roll2=[[1d6]]}} {{roll3=[[1d6]]}} {{class=정신}} {{name=최면술}} {{bonus=[[@{bonus-st16}]]}} {{bonus-v=@{bonus-st16}}} {{penalty=[[@{penalty-st16}]]}} {{penalty-v=@{penalty-st16}}} {{dice1=[[@{diceCheck46}]]}} {{dice2=[[@{diceCheck47}]]}} {{dice3=[[@{diceCheck48}]]}}"></button>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <input type="checkbox" class="sheet-ability-toggle" id="label55" value="1" name="attr_st17">
+                <label for="label55"><span>평정</span></label>
+                <div class="sheet-ability-icon5">정신</div>
+              </td>
+              <td>
+                <input type="checkbox" class="sheet-ability-dice" id="dicelabel49" value="1" name="attr_stdice49">
+                <label for="dicelabel49"></label>
+                <input type="checkbox" class="sheet-ability-dice" id="dicelabel50" value="1" name="attr_stdice50">
+                <label for="dicelabel50"></label>
+                <input type="checkbox" class="sheet-ability-dice" id="dicelabel51" value="1" name="attr_stdice51">
+                <label for="dicelabel51"></label>
+                <input type="hidden" name="attr_diceCheck49" value="0">
+                <input type="hidden" name="attr_diceCheck50" value="0">
+                <input type="hidden" name="attr_diceCheck51" value="0">
+              </td>
+              <td>
+                <span>+</span>
+                <input type="number" class="sheet-bonus" name="attr_bonus-st17" value="0" min="0">
+                <span>-</span>
+                <input type="number" class="sheet-bonus" name="attr_penalty-st17" value="0" min="0">
+              </td>
+              <td>
+                <button type="roll" name="roll-st17" value="&{template:ability} {{icon-class=[[2]]}} {{roll1=[[1d6]]}} {{roll2=[[1d6]]}} {{roll3=[[1d6]]}} {{class=정신}} {{name=평정}} {{bonus=[[@{bonus-st17}]]}} {{bonus-v=@{bonus-st17}}} {{penalty=[[@{penalty-st17}]]}} {{penalty-v=@{penalty-st17}}} {{dice1=[[@{diceCheck49}]]}} {{dice2=[[@{diceCheck50}]]}} {{dice3=[[@{diceCheck51}]]}}"></button>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <input type="checkbox" class="sheet-ability-toggle" id="label56" value="1" name="attr_st18">
+                <label for="label56"><span>폭파</span></label>
+                <div class="sheet-ability-icon4">조작</div>
+              </td>
+              <td>
+                <input type="checkbox" class="sheet-ability-dice" id="dicelabel52" value="1" name="attr_stdice52">
+                <label for="dicelabel52"></label>
+                <input type="checkbox" class="sheet-ability-dice" id="dicelabel53" value="1" name="attr_stdice53">
+                <label for="dicelabel53"></label>
+                <input type="checkbox" class="sheet-ability-dice" id="dicelabel54" value="1" name="attr_stdice54">
+                <label for="dicelabel54"></label>
+                <input type="hidden" name="attr_diceCheck52" value="0">
+                <input type="hidden" name="attr_diceCheck53" value="0">
+                <input type="hidden" name="attr_diceCheck54" value="0">
+              </td>
+              <td>
+                <span>+</span>
+                <input type="number" class="sheet-bonus" name="attr_bonus-st18" value="0" min="0">
+                <span>-</span>
+                <input type="number" class="sheet-bonus" name="attr_penalty-st18" value="0" min="0">
+              </td>
+              <td>
+                <button type="roll" name="roll-st18" value="&{template:ability} {{icon-class=[[1]]}} {{roll1=[[1d6]]}} {{roll2=[[1d6]]}} {{roll3=[[1d6]]}} {{class=조작}} {{name=폭파}} {{bonus=[[@{bonus-st18}]]}} {{bonus-v=@{bonus-st18}}} {{penalty=[[@{penalty-st18}]]}} {{penalty-v=@{penalty-st18}}} {{dice1=[[@{diceCheck52}]]}} {{dice2=[[@{diceCheck53}]]}} {{dice3=[[@{diceCheck54}]]}}"></button>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <input type="checkbox" class="sheet-ability-toggle" id="label57" value="1" name="attr_st19">
+                <label for="label57"><span>훔치기</span></label>
+                <div class="sheet-ability-icon4">조작</div>
+              </td>
+              <td>
+                <input type="checkbox" class="sheet-ability-dice" id="dicelabel55" value="1" name="attr_stdice55">
+                <label for="dicelabel55"></label>
+                <input type="checkbox" class="sheet-ability-dice" id="dicelabel56" value="1" name="attr_stdice56">
+                <label for="dicelabel56"></label>
+                <input type="checkbox" class="sheet-ability-dice" id="dicelabel57" value="1" name="attr_stdice57">
+                <label for="dicelabel57"></label>
+                <input type="hidden" name="attr_diceCheck55" value="0">
+                <input type="hidden" name="attr_diceCheck56" value="0">
+                <input type="hidden" name="attr_diceCheck57" value="0">
+              </td>
+              <td>
+                <span>+</span>
+                <input type="number" class="sheet-bonus" name="attr_bonus-st19" value="0" min="0">
+                <span>-</span>
+                <input type="number" class="sheet-bonus" name="attr_penalty-st19" value="0" min="0">
+              </td>
+              <td>
+                <button type="roll" name="roll-st19" value="&{template:ability} {{icon-class=[[1]]}} {{roll1=[[1d6]]}} {{roll2=[[1d6]]}} {{roll3=[[1d6]]}} {{class=조작}} {{name=훔치기}} {{bonus=[[@{bonus-st19}]]}} {{bonus-v=@{bonus-st19}}} {{penalty=[[@{penalty-st19}]]}} {{penalty-v=@{penalty-st19}}} {{dice1=[[@{diceCheck55}]]}} {{dice2=[[@{diceCheck56}]]}} {{dice3=[[@{diceCheck57}]]}}"></button>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="sheet-ability-total">
+          <div class="sheet-total">
+            <span>보유 기능 수</span>
+            <input type="number" name="attr_abilityTotal2" value="0" min="0">
+          </div>
+          <div class="sheet-total">
+            <span>주사위 합</span>
+            <input type="number" name="attr_abilityTotal3" value="0" min="0">
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <hr />
+  
+    <div class="sheet-backstory">
+      <h3>백스토리</h3>
+      <textarea name="attr_backstory" rows="1" cols="5" placeholder="주인공 백스토리"></textarea>
+    </div>
+  
+    <hr />
+  
+    <div class="sheet-bottom">
+      <h3>조력자</h3>
+      <div class="sheet-assist-1">
+        <table>
+          <tr>
+            <td><span>이름</span></td>
+            <td><input type="text" name="attr_name-assist-1" value="" placeholder="조력자1 이름"></td>
+            <td>
+              <select name="attr_assist-1-ab1">
+                <option value="0">= 기능1 =</option>
+                <option value="1">감식</option>
+                <option value="2">거리의 법칙</option>
+                <option value="3">건축학</option>
+                <option value="4">경찰 상대</option>
+                <option value="5">고고학</option>
+                <option value="6">고무</option>
+                <option value="7">공예</option>
+                <option value="8">관료제</option>
+                <option value="9">구비전승</option>
+                <option value="10">물리학</option>
+                <option value="11">미술사</option>
+                <option value="12">법률</option>
+                <option value="13">생물학</option>
+                <option value="14">심리학</option>
+                <option value="15">아첨</option>
+                <option value="16">안심</option>
+                <option value="17">암호</option>
+                <option value="18">약학</option>
+                <option value="19">언어</option>
+                <option value="20">역사학</option>
+                <option value="21">열쇠공</option>
+                <option value="22">오컬트</option>
+                <option value="23">위협</option>
+                <option value="24">의료</option>
+                <option value="25">인류학</option>
+                <option value="26">자료 조사</option>
+                <option value="27">자연 지식</option>
+                <option value="28">종교학</option>
+                <option value="29">증거물 수집</option>
+                <option value="30">지질학</option>
+                <option value="31">진실 판별</option>
+                <option value="32">천문학</option>
+                <option value="33">촬영</option>
+                <option value="34">크툴루 신화</option>
+                <option value="35">화학</option>
+                <option value="36">회계</option>
+                <option value="37">흥정</option>
+              </select>
+              <select name="attr_assist-1-ab2">
+                <option value="0">= 기능2 =</option>
+                <option value="1">감식</option>
+                <option value="2">거리의 법칙</option>
+                <option value="3">건축학</option>
+                <option value="4">경찰 상대</option>
+                <option value="5">고고학</option>
+                <option value="6">고무</option>
+                <option value="7">공예</option>
+                <option value="8">관료제</option>
+                <option value="9">구비전승</option>
+                <option value="10">물리학</option>
+                <option value="11">미술사</option>
+                <option value="12">법률</option>
+                <option value="13">생물학</option>
+                <option value="14">심리학</option>
+                <option value="15">아첨</option>
+                <option value="16">안심</option>
+                <option value="17">암호</option>
+                <option value="18">약학</option>
+                <option value="19">언어</option>
+                <option value="20">역사학</option>
+                <option value="21">열쇠공</option>
+                <option value="22">오컬트</option>
+                <option value="23">위협</option>
+                <option value="24">의료</option>
+                <option value="25">인류학</option>
+                <option value="26">자료 조사</option>
+                <option value="27">자연 지식</option>
+                <option value="28">종교학</option>
+                <option value="29">증거물 수집</option>
+                <option value="30">지질학</option>
+                <option value="31">진실 판별</option>
+                <option value="32">천문학</option>
+                <option value="33">촬영</option>
+                <option value="34">크툴루 신화</option>
+                <option value="35">화학</option>
+                <option value="36">회계</option>
+                <option value="37">흥정</option>
+              </select>
+              <select name="attr_assist-1-ab3">
+                <option value="0">= 기능3 =</option>
+                <option value="1">감식</option>
+                <option value="2">거리의 법칙</option>
+                <option value="3">건축학</option>
+                <option value="4">경찰 상대</option>
+                <option value="5">고고학</option>
+                <option value="6">고무</option>
+                <option value="7">공예</option>
+                <option value="8">관료제</option>
+                <option value="9">구비전승</option>
+                <option value="10">물리학</option>
+                <option value="11">미술사</option>
+                <option value="12">법률</option>
+                <option value="13">생물학</option>
+                <option value="14">심리학</option>
+                <option value="15">아첨</option>
+                <option value="16">안심</option>
+                <option value="17">암호</option>
+                <option value="18">약학</option>
+                <option value="19">언어</option>
+                <option value="20">역사학</option>
+                <option value="21">열쇠공</option>
+                <option value="22">오컬트</option>
+                <option value="23">위협</option>
+                <option value="24">의료</option>
+                <option value="25">인류학</option>
+                <option value="26">자료 조사</option>
+                <option value="27">자연 지식</option>
+                <option value="28">종교학</option>
+                <option value="29">증거물 수집</option>
+                <option value="30">지질학</option>
+                <option value="31">진실 판별</option>
+                <option value="32">천문학</option>
+                <option value="33">촬영</option>
+                <option value="34">크툴루 신화</option>
+                <option value="35">화학</option>
+                <option value="36">회계</option>
+                <option value="37">흥정</option>
+              </select>
+              <select name="attr_assist-1-ab4">
+                <option value="0">= 기능4 =</option>
+                <option value="1">감식</option>
+                <option value="2">거리의 법칙</option>
+                <option value="3">건축학</option>
+                <option value="4">경찰 상대</option>
+                <option value="5">고고학</option>
+                <option value="6">고무</option>
+                <option value="7">공예</option>
+                <option value="8">관료제</option>
+                <option value="9">구비전승</option>
+                <option value="10">물리학</option>
+                <option value="11">미술사</option>
+                <option value="12">법률</option>
+                <option value="13">생물학</option>
+                <option value="14">심리학</option>
+                <option value="15">아첨</option>
+                <option value="16">안심</option>
+                <option value="17">암호</option>
+                <option value="18">약학</option>
+                <option value="19">언어</option>
+                <option value="20">역사학</option>
+                <option value="21">열쇠공</option>
+                <option value="22">오컬트</option>
+                <option value="23">위협</option>
+                <option value="24">의료</option>
+                <option value="25">인류학</option>
+                <option value="26">자료 조사</option>
+                <option value="27">자연 지식</option>
+                <option value="28">종교학</option>
+                <option value="29">증거물 수집</option>
+                <option value="30">지질학</option>
+                <option value="31">진실 판별</option>
+                <option value="32">천문학</option>
+                <option value="33">촬영</option>
+                <option value="34">크툴루 신화</option>
+                <option value="35">화학</option>
+                <option value="36">회계</option>
+                <option value="37">흥정</option>
+              </select>
+              <select name="attr_assist-1-ab5">
+                <option value="0">= 기능5 =</option>
+                <option value="1">감식</option>
+                <option value="2">거리의 법칙</option>
+                <option value="3">건축학</option>
+                <option value="4">경찰 상대</option>
+                <option value="5">고고학</option>
+                <option value="6">고무</option>
+                <option value="7">공예</option>
+                <option value="8">관료제</option>
+                <option value="9">구비전승</option>
+                <option value="10">물리학</option>
+                <option value="11">미술사</option>
+                <option value="12">법률</option>
+                <option value="13">생물학</option>
+                <option value="14">심리학</option>
+                <option value="15">아첨</option>
+                <option value="16">안심</option>
+                <option value="17">암호</option>
+                <option value="18">약학</option>
+                <option value="19">언어</option>
+                <option value="20">역사학</option>
+                <option value="21">열쇠공</option>
+                <option value="22">오컬트</option>
+                <option value="23">위협</option>
+                <option value="24">의료</option>
+                <option value="25">인류학</option>
+                <option value="26">자료 조사</option>
+                <option value="27">자연 지식</option>
+                <option value="28">종교학</option>
+                <option value="29">증거물 수집</option>
+                <option value="30">지질학</option>
+                <option value="31">진실 판별</option>
+                <option value="32">천문학</option>
+                <option value="33">촬영</option>
+                <option value="34">크툴루 신화</option>
+                <option value="35">화학</option>
+                <option value="36">회계</option>
+                <option value="37">흥정</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="3">
+              <textarea name="attr_desc-assist-1" rows="1" cols="5" placeholder="조력자1의 설명"></textarea>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="sheet-assist-2">
+        <table>
+          <tr>
+            <td><span>이름</span></td>
+            <td><input type="text" name="attr_name-assist-2" value="" placeholder="조력자2 이름"></td>
+            <td>
+              <select name="attr_assist-2-ab1">
+                <option value="0">= 기능1 =</option>
+                <option value="1">감식</option>
+                <option value="2">거리의 법칙</option>
+                <option value="3">건축학</option>
+                <option value="4">경찰 상대</option>
+                <option value="5">고고학</option>
+                <option value="6">고무</option>
+                <option value="7">공예</option>
+                <option value="8">관료제</option>
+                <option value="9">구비전승</option>
+                <option value="10">물리학</option>
+                <option value="11">미술사</option>
+                <option value="12">법률</option>
+                <option value="13">생물학</option>
+                <option value="14">심리학</option>
+                <option value="15">아첨</option>
+                <option value="16">안심</option>
+                <option value="17">암호</option>
+                <option value="18">약학</option>
+                <option value="19">언어</option>
+                <option value="20">역사학</option>
+                <option value="21">열쇠공</option>
+                <option value="22">오컬트</option>
+                <option value="23">위협</option>
+                <option value="24">의료</option>
+                <option value="25">인류학</option>
+                <option value="26">자료 조사</option>
+                <option value="27">자연 지식</option>
+                <option value="28">종교학</option>
+                <option value="29">증거물 수집</option>
+                <option value="30">지질학</option>
+                <option value="31">진실 판별</option>
+                <option value="32">천문학</option>
+                <option value="33">촬영</option>
+                <option value="34">크툴루 신화</option>
+                <option value="35">화학</option>
+                <option value="36">회계</option>
+                <option value="37">흥정</option>
+              </select>
+              <select name="attr_assist-2-ab2">
+                <option value="0">= 기능2 =</option>
+                <option value="1">감식</option>
+                <option value="2">거리의 법칙</option>
+                <option value="3">건축학</option>
+                <option value="4">경찰 상대</option>
+                <option value="5">고고학</option>
+                <option value="6">고무</option>
+                <option value="7">공예</option>
+                <option value="8">관료제</option>
+                <option value="9">구비전승</option>
+                <option value="10">물리학</option>
+                <option value="11">미술사</option>
+                <option value="12">법률</option>
+                <option value="13">생물학</option>
+                <option value="14">심리학</option>
+                <option value="15">아첨</option>
+                <option value="16">안심</option>
+                <option value="17">암호</option>
+                <option value="18">약학</option>
+                <option value="19">언어</option>
+                <option value="20">역사학</option>
+                <option value="21">열쇠공</option>
+                <option value="22">오컬트</option>
+                <option value="23">위협</option>
+                <option value="24">의료</option>
+                <option value="25">인류학</option>
+                <option value="26">자료 조사</option>
+                <option value="27">자연 지식</option>
+                <option value="28">종교학</option>
+                <option value="29">증거물 수집</option>
+                <option value="30">지질학</option>
+                <option value="31">진실 판별</option>
+                <option value="32">천문학</option>
+                <option value="33">촬영</option>
+                <option value="34">크툴루 신화</option>
+                <option value="35">화학</option>
+                <option value="36">회계</option>
+                <option value="37">흥정</option>
+              </select>
+              <select name="attr_assist-2-ab3">
+                <option value="0">= 기능3 =</option>
+                <option value="1">감식</option>
+                <option value="2">거리의 법칙</option>
+                <option value="3">건축학</option>
+                <option value="4">경찰 상대</option>
+                <option value="5">고고학</option>
+                <option value="6">고무</option>
+                <option value="7">공예</option>
+                <option value="8">관료제</option>
+                <option value="9">구비전승</option>
+                <option value="10">물리학</option>
+                <option value="11">미술사</option>
+                <option value="12">법률</option>
+                <option value="13">생물학</option>
+                <option value="14">심리학</option>
+                <option value="15">아첨</option>
+                <option value="16">안심</option>
+                <option value="17">암호</option>
+                <option value="18">약학</option>
+                <option value="19">언어</option>
+                <option value="20">역사학</option>
+                <option value="21">열쇠공</option>
+                <option value="22">오컬트</option>
+                <option value="23">위협</option>
+                <option value="24">의료</option>
+                <option value="25">인류학</option>
+                <option value="26">자료 조사</option>
+                <option value="27">자연 지식</option>
+                <option value="28">종교학</option>
+                <option value="29">증거물 수집</option>
+                <option value="30">지질학</option>
+                <option value="31">진실 판별</option>
+                <option value="32">천문학</option>
+                <option value="33">촬영</option>
+                <option value="34">크툴루 신화</option>
+                <option value="35">화학</option>
+                <option value="36">회계</option>
+                <option value="37">흥정</option>
+              </select>
+              <select name="attr_assist-2-ab4">
+                <option value="0">= 기능4 =</option>
+                <option value="1">감식</option>
+                <option value="2">거리의 법칙</option>
+                <option value="3">건축학</option>
+                <option value="4">경찰 상대</option>
+                <option value="5">고고학</option>
+                <option value="6">고무</option>
+                <option value="7">공예</option>
+                <option value="8">관료제</option>
+                <option value="9">구비전승</option>
+                <option value="10">물리학</option>
+                <option value="11">미술사</option>
+                <option value="12">법률</option>
+                <option value="13">생물학</option>
+                <option value="14">심리학</option>
+                <option value="15">아첨</option>
+                <option value="16">안심</option>
+                <option value="17">암호</option>
+                <option value="18">약학</option>
+                <option value="19">언어</option>
+                <option value="20">역사학</option>
+                <option value="21">열쇠공</option>
+                <option value="22">오컬트</option>
+                <option value="23">위협</option>
+                <option value="24">의료</option>
+                <option value="25">인류학</option>
+                <option value="26">자료 조사</option>
+                <option value="27">자연 지식</option>
+                <option value="28">종교학</option>
+                <option value="29">증거물 수집</option>
+                <option value="30">지질학</option>
+                <option value="31">진실 판별</option>
+                <option value="32">천문학</option>
+                <option value="33">촬영</option>
+                <option value="34">크툴루 신화</option>
+                <option value="35">화학</option>
+                <option value="36">회계</option>
+                <option value="37">흥정</option>
+              </select>
+              <select name="attr_assist-2-ab5">
+                <option value="0">= 기능5 =</option>
+                <option value="1">감식</option>
+                <option value="2">거리의 법칙</option>
+                <option value="3">건축학</option>
+                <option value="4">경찰 상대</option>
+                <option value="5">고고학</option>
+                <option value="6">고무</option>
+                <option value="7">공예</option>
+                <option value="8">관료제</option>
+                <option value="9">구비전승</option>
+                <option value="10">물리학</option>
+                <option value="11">미술사</option>
+                <option value="12">법률</option>
+                <option value="13">생물학</option>
+                <option value="14">심리학</option>
+                <option value="15">아첨</option>
+                <option value="16">안심</option>
+                <option value="17">암호</option>
+                <option value="18">약학</option>
+                <option value="19">언어</option>
+                <option value="20">역사학</option>
+                <option value="21">열쇠공</option>
+                <option value="22">오컬트</option>
+                <option value="23">위협</option>
+                <option value="24">의료</option>
+                <option value="25">인류학</option>
+                <option value="26">자료 조사</option>
+                <option value="27">자연 지식</option>
+                <option value="28">종교학</option>
+                <option value="29">증거물 수집</option>
+                <option value="30">지질학</option>
+                <option value="31">진실 판별</option>
+                <option value="32">천문학</option>
+                <option value="33">촬영</option>
+                <option value="34">크툴루 신화</option>
+                <option value="35">화학</option>
+                <option value="36">회계</option>
+                <option value="37">흥정</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="3">
+              <textarea name="attr_desc-assist-2" rows="1" cols="5" placeholder="조력자2의 설명"></textarea>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="sheet-assist-3">
+        <table>
+          <tr>
+            <td><span>이름</span></td>
+            <td><input type="text" name="attr_name-assist-2" value="" placeholder="조력자3 이름"></td>
+            <td>
+              <select name="attr_assist-3-ab1">
+                <option value="0">= 기능1 =</option>
+                <option value="1">감식</option>
+                <option value="2">거리의 법칙</option>
+                <option value="3">건축학</option>
+                <option value="4">경찰 상대</option>
+                <option value="5">고고학</option>
+                <option value="6">고무</option>
+                <option value="7">공예</option>
+                <option value="8">관료제</option>
+                <option value="9">구비전승</option>
+                <option value="10">물리학</option>
+                <option value="11">미술사</option>
+                <option value="12">법률</option>
+                <option value="13">생물학</option>
+                <option value="14">심리학</option>
+                <option value="15">아첨</option>
+                <option value="16">안심</option>
+                <option value="17">암호</option>
+                <option value="18">약학</option>
+                <option value="19">언어</option>
+                <option value="20">역사학</option>
+                <option value="21">열쇠공</option>
+                <option value="22">오컬트</option>
+                <option value="23">위협</option>
+                <option value="24">의료</option>
+                <option value="25">인류학</option>
+                <option value="26">자료 조사</option>
+                <option value="27">자연 지식</option>
+                <option value="28">종교학</option>
+                <option value="29">증거물 수집</option>
+                <option value="30">지질학</option>
+                <option value="31">진실 판별</option>
+                <option value="32">천문학</option>
+                <option value="33">촬영</option>
+                <option value="34">크툴루 신화</option>
+                <option value="35">화학</option>
+                <option value="36">회계</option>
+                <option value="37">흥정</option>
+              </select>
+              <select name="attr_assist-3-ab2">
+                <option value="0">= 기능2 =</option>
+                <option value="1">감식</option>
+                <option value="2">거리의 법칙</option>
+                <option value="3">건축학</option>
+                <option value="4">경찰 상대</option>
+                <option value="5">고고학</option>
+                <option value="6">고무</option>
+                <option value="7">공예</option>
+                <option value="8">관료제</option>
+                <option value="9">구비전승</option>
+                <option value="10">물리학</option>
+                <option value="11">미술사</option>
+                <option value="12">법률</option>
+                <option value="13">생물학</option>
+                <option value="14">심리학</option>
+                <option value="15">아첨</option>
+                <option value="16">안심</option>
+                <option value="17">암호</option>
+                <option value="18">약학</option>
+                <option value="19">언어</option>
+                <option value="20">역사학</option>
+                <option value="21">열쇠공</option>
+                <option value="22">오컬트</option>
+                <option value="23">위협</option>
+                <option value="24">의료</option>
+                <option value="25">인류학</option>
+                <option value="26">자료 조사</option>
+                <option value="27">자연 지식</option>
+                <option value="28">종교학</option>
+                <option value="29">증거물 수집</option>
+                <option value="30">지질학</option>
+                <option value="31">진실 판별</option>
+                <option value="32">천문학</option>
+                <option value="33">촬영</option>
+                <option value="34">크툴루 신화</option>
+                <option value="35">화학</option>
+                <option value="36">회계</option>
+                <option value="37">흥정</option>
+              </select>
+              <select name="attr_assist-3-ab3">
+                <option value="0">= 기능3 =</option>
+                <option value="1">감식</option>
+                <option value="2">거리의 법칙</option>
+                <option value="3">건축학</option>
+                <option value="4">경찰 상대</option>
+                <option value="5">고고학</option>
+                <option value="6">고무</option>
+                <option value="7">공예</option>
+                <option value="8">관료제</option>
+                <option value="9">구비전승</option>
+                <option value="10">물리학</option>
+                <option value="11">미술사</option>
+                <option value="12">법률</option>
+                <option value="13">생물학</option>
+                <option value="14">심리학</option>
+                <option value="15">아첨</option>
+                <option value="16">안심</option>
+                <option value="17">암호</option>
+                <option value="18">약학</option>
+                <option value="19">언어</option>
+                <option value="20">역사학</option>
+                <option value="21">열쇠공</option>
+                <option value="22">오컬트</option>
+                <option value="23">위협</option>
+                <option value="24">의료</option>
+                <option value="25">인류학</option>
+                <option value="26">자료 조사</option>
+                <option value="27">자연 지식</option>
+                <option value="28">종교학</option>
+                <option value="29">증거물 수집</option>
+                <option value="30">지질학</option>
+                <option value="31">진실 판별</option>
+                <option value="32">천문학</option>
+                <option value="33">촬영</option>
+                <option value="34">크툴루 신화</option>
+                <option value="35">화학</option>
+                <option value="36">회계</option>
+                <option value="37">흥정</option>
+              </select>
+              <select name="attr_assist-3-ab4">
+                <option value="0">= 기능4 =</option>
+                <option value="1">감식</option>
+                <option value="2">거리의 법칙</option>
+                <option value="3">건축학</option>
+                <option value="4">경찰 상대</option>
+                <option value="5">고고학</option>
+                <option value="6">고무</option>
+                <option value="7">공예</option>
+                <option value="8">관료제</option>
+                <option value="9">구비전승</option>
+                <option value="10">물리학</option>
+                <option value="11">미술사</option>
+                <option value="12">법률</option>
+                <option value="13">생물학</option>
+                <option value="14">심리학</option>
+                <option value="15">아첨</option>
+                <option value="16">안심</option>
+                <option value="17">암호</option>
+                <option value="18">약학</option>
+                <option value="19">언어</option>
+                <option value="20">역사학</option>
+                <option value="21">열쇠공</option>
+                <option value="22">오컬트</option>
+                <option value="23">위협</option>
+                <option value="24">의료</option>
+                <option value="25">인류학</option>
+                <option value="26">자료 조사</option>
+                <option value="27">자연 지식</option>
+                <option value="28">종교학</option>
+                <option value="29">증거물 수집</option>
+                <option value="30">지질학</option>
+                <option value="31">진실 판별</option>
+                <option value="32">천문학</option>
+                <option value="33">촬영</option>
+                <option value="34">크툴루 신화</option>
+                <option value="35">화학</option>
+                <option value="36">회계</option>
+                <option value="37">흥정</option>
+              </select>
+              <select name="attr_assist-3-ab5">
+                <option value="0">= 기능5 =</option>
+                <option value="1">감식</option>
+                <option value="2">거리의 법칙</option>
+                <option value="3">건축학</option>
+                <option value="4">경찰 상대</option>
+                <option value="5">고고학</option>
+                <option value="6">고무</option>
+                <option value="7">공예</option>
+                <option value="8">관료제</option>
+                <option value="9">구비전승</option>
+                <option value="10">물리학</option>
+                <option value="11">미술사</option>
+                <option value="12">법률</option>
+                <option value="13">생물학</option>
+                <option value="14">심리학</option>
+                <option value="15">아첨</option>
+                <option value="16">안심</option>
+                <option value="17">암호</option>
+                <option value="18">약학</option>
+                <option value="19">언어</option>
+                <option value="20">역사학</option>
+                <option value="21">열쇠공</option>
+                <option value="22">오컬트</option>
+                <option value="23">위협</option>
+                <option value="24">의료</option>
+                <option value="25">인류학</option>
+                <option value="26">자료 조사</option>
+                <option value="27">자연 지식</option>
+                <option value="28">종교학</option>
+                <option value="29">증거물 수집</option>
+                <option value="30">지질학</option>
+                <option value="31">진실 판별</option>
+                <option value="32">천문학</option>
+                <option value="33">촬영</option>
+                <option value="34">크툴루 신화</option>
+                <option value="35">화학</option>
+                <option value="36">회계</option>
+                <option value="37">흥정</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="3">
+              <textarea name="attr_desc-assist-3" rows="1" cols="5" placeholder="조력자3의 설명"></textarea>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="sheet-assist-4">
+        <table>
+          <tr>
+            <td><span>이름</span></td>
+            <td><input type="text" name="attr_name-assist-4" value="" placeholder="조력자4 이름"></td>
+            <td>
+              <select name="attr_assist-4-ab1">
+                <option value="0">= 기능1 =</option>
+                <option value="1">감식</option>
+                <option value="2">거리의 법칙</option>
+                <option value="3">건축학</option>
+                <option value="4">경찰 상대</option>
+                <option value="5">고고학</option>
+                <option value="6">고무</option>
+                <option value="7">공예</option>
+                <option value="8">관료제</option>
+                <option value="9">구비전승</option>
+                <option value="10">물리학</option>
+                <option value="11">미술사</option>
+                <option value="12">법률</option>
+                <option value="13">생물학</option>
+                <option value="14">심리학</option>
+                <option value="15">아첨</option>
+                <option value="16">안심</option>
+                <option value="17">암호</option>
+                <option value="18">약학</option>
+                <option value="19">언어</option>
+                <option value="20">역사학</option>
+                <option value="21">열쇠공</option>
+                <option value="22">오컬트</option>
+                <option value="23">위협</option>
+                <option value="24">의료</option>
+                <option value="25">인류학</option>
+                <option value="26">자료 조사</option>
+                <option value="27">자연 지식</option>
+                <option value="28">종교학</option>
+                <option value="29">증거물 수집</option>
+                <option value="30">지질학</option>
+                <option value="31">진실 판별</option>
+                <option value="32">천문학</option>
+                <option value="33">촬영</option>
+                <option value="34">크툴루 신화</option>
+                <option value="35">화학</option>
+                <option value="36">회계</option>
+                <option value="37">흥정</option>
+              </select>
+              <select name="attr_assist-4-ab2">
+                <option value="0">= 기능2 =</option>
+                <option value="1">감식</option>
+                <option value="2">거리의 법칙</option>
+                <option value="3">건축학</option>
+                <option value="4">경찰 상대</option>
+                <option value="5">고고학</option>
+                <option value="6">고무</option>
+                <option value="7">공예</option>
+                <option value="8">관료제</option>
+                <option value="9">구비전승</option>
+                <option value="10">물리학</option>
+                <option value="11">미술사</option>
+                <option value="12">법률</option>
+                <option value="13">생물학</option>
+                <option value="14">심리학</option>
+                <option value="15">아첨</option>
+                <option value="16">안심</option>
+                <option value="17">암호</option>
+                <option value="18">약학</option>
+                <option value="19">언어</option>
+                <option value="20">역사학</option>
+                <option value="21">열쇠공</option>
+                <option value="22">오컬트</option>
+                <option value="23">위협</option>
+                <option value="24">의료</option>
+                <option value="25">인류학</option>
+                <option value="26">자료 조사</option>
+                <option value="27">자연 지식</option>
+                <option value="28">종교학</option>
+                <option value="29">증거물 수집</option>
+                <option value="30">지질학</option>
+                <option value="31">진실 판별</option>
+                <option value="32">천문학</option>
+                <option value="33">촬영</option>
+                <option value="34">크툴루 신화</option>
+                <option value="35">화학</option>
+                <option value="36">회계</option>
+                <option value="37">흥정</option>
+              </select>
+              <select name="attr_assist-4-ab3">
+                <option value="0">= 기능3 =</option>
+                <option value="1">감식</option>
+                <option value="2">거리의 법칙</option>
+                <option value="3">건축학</option>
+                <option value="4">경찰 상대</option>
+                <option value="5">고고학</option>
+                <option value="6">고무</option>
+                <option value="7">공예</option>
+                <option value="8">관료제</option>
+                <option value="9">구비전승</option>
+                <option value="10">물리학</option>
+                <option value="11">미술사</option>
+                <option value="12">법률</option>
+                <option value="13">생물학</option>
+                <option value="14">심리학</option>
+                <option value="15">아첨</option>
+                <option value="16">안심</option>
+                <option value="17">암호</option>
+                <option value="18">약학</option>
+                <option value="19">언어</option>
+                <option value="20">역사학</option>
+                <option value="21">열쇠공</option>
+                <option value="22">오컬트</option>
+                <option value="23">위협</option>
+                <option value="24">의료</option>
+                <option value="25">인류학</option>
+                <option value="26">자료 조사</option>
+                <option value="27">자연 지식</option>
+                <option value="28">종교학</option>
+                <option value="29">증거물 수집</option>
+                <option value="30">지질학</option>
+                <option value="31">진실 판별</option>
+                <option value="32">천문학</option>
+                <option value="33">촬영</option>
+                <option value="34">크툴루 신화</option>
+                <option value="35">화학</option>
+                <option value="36">회계</option>
+                <option value="37">흥정</option>
+              </select>
+              <select name="attr_assist-4-ab4">
+                <option value="0">= 기능4 =</option>
+                <option value="1">감식</option>
+                <option value="2">거리의 법칙</option>
+                <option value="3">건축학</option>
+                <option value="4">경찰 상대</option>
+                <option value="5">고고학</option>
+                <option value="6">고무</option>
+                <option value="7">공예</option>
+                <option value="8">관료제</option>
+                <option value="9">구비전승</option>
+                <option value="10">물리학</option>
+                <option value="11">미술사</option>
+                <option value="12">법률</option>
+                <option value="13">생물학</option>
+                <option value="14">심리학</option>
+                <option value="15">아첨</option>
+                <option value="16">안심</option>
+                <option value="17">암호</option>
+                <option value="18">약학</option>
+                <option value="19">언어</option>
+                <option value="20">역사학</option>
+                <option value="21">열쇠공</option>
+                <option value="22">오컬트</option>
+                <option value="23">위협</option>
+                <option value="24">의료</option>
+                <option value="25">인류학</option>
+                <option value="26">자료 조사</option>
+                <option value="27">자연 지식</option>
+                <option value="28">종교학</option>
+                <option value="29">증거물 수집</option>
+                <option value="30">지질학</option>
+                <option value="31">진실 판별</option>
+                <option value="32">천문학</option>
+                <option value="33">촬영</option>
+                <option value="34">크툴루 신화</option>
+                <option value="35">화학</option>
+                <option value="36">회계</option>
+                <option value="37">흥정</option>
+              </select>
+              <select name="attr_assist-4-ab5">
+                <option value="0">= 기능5 =</option>
+                <option value="1">감식</option>
+                <option value="2">거리의 법칙</option>
+                <option value="3">건축학</option>
+                <option value="4">경찰 상대</option>
+                <option value="5">고고학</option>
+                <option value="6">고무</option>
+                <option value="7">공예</option>
+                <option value="8">관료제</option>
+                <option value="9">구비전승</option>
+                <option value="10">물리학</option>
+                <option value="11">미술사</option>
+                <option value="12">법률</option>
+                <option value="13">생물학</option>
+                <option value="14">심리학</option>
+                <option value="15">아첨</option>
+                <option value="16">안심</option>
+                <option value="17">암호</option>
+                <option value="18">약학</option>
+                <option value="19">언어</option>
+                <option value="20">역사학</option>
+                <option value="21">열쇠공</option>
+                <option value="22">오컬트</option>
+                <option value="23">위협</option>
+                <option value="24">의료</option>
+                <option value="25">인류학</option>
+                <option value="26">자료 조사</option>
+                <option value="27">자연 지식</option>
+                <option value="28">종교학</option>
+                <option value="29">증거물 수집</option>
+                <option value="30">지질학</option>
+                <option value="31">진실 판별</option>
+                <option value="32">천문학</option>
+                <option value="33">촬영</option>
+                <option value="34">크툴루 신화</option>
+                <option value="35">화학</option>
+                <option value="36">회계</option>
+                <option value="37">흥정</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="3">
+              <textarea name="attr_desc-assist-4" rows="1" cols="5" placeholder="조력자4의 설명"></textarea>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="sheet-assist-5">
+        <table>
+          <tr>
+            <td><span>이름</span></td>
+            <td><input type="text" name="attr_name-assist-5" value="" placeholder="조력자5 이름"></td>
+            <td>
+              <select name="attr_assist-5-ab1">
+                <option value="0">= 기능1 =</option>
+                <option value="1">감식</option>
+                <option value="2">거리의 법칙</option>
+                <option value="3">건축학</option>
+                <option value="4">경찰 상대</option>
+                <option value="5">고고학</option>
+                <option value="6">고무</option>
+                <option value="7">공예</option>
+                <option value="8">관료제</option>
+                <option value="9">구비전승</option>
+                <option value="10">물리학</option>
+                <option value="11">미술사</option>
+                <option value="12">법률</option>
+                <option value="13">생물학</option>
+                <option value="14">심리학</option>
+                <option value="15">아첨</option>
+                <option value="16">안심</option>
+                <option value="17">암호</option>
+                <option value="18">약학</option>
+                <option value="19">언어</option>
+                <option value="20">역사학</option>
+                <option value="21">열쇠공</option>
+                <option value="22">오컬트</option>
+                <option value="23">위협</option>
+                <option value="24">의료</option>
+                <option value="25">인류학</option>
+                <option value="26">자료 조사</option>
+                <option value="27">자연 지식</option>
+                <option value="28">종교학</option>
+                <option value="29">증거물 수집</option>
+                <option value="30">지질학</option>
+                <option value="31">진실 판별</option>
+                <option value="32">천문학</option>
+                <option value="33">촬영</option>
+                <option value="34">크툴루 신화</option>
+                <option value="35">화학</option>
+                <option value="36">회계</option>
+                <option value="37">흥정</option>
+              </select>
+              <select name="attr_assist-5-ab2">
+                <option value="0">= 기능2 =</option>
+                <option value="1">감식</option>
+                <option value="2">거리의 법칙</option>
+                <option value="3">건축학</option>
+                <option value="4">경찰 상대</option>
+                <option value="5">고고학</option>
+                <option value="6">고무</option>
+                <option value="7">공예</option>
+                <option value="8">관료제</option>
+                <option value="9">구비전승</option>
+                <option value="10">물리학</option>
+                <option value="11">미술사</option>
+                <option value="12">법률</option>
+                <option value="13">생물학</option>
+                <option value="14">심리학</option>
+                <option value="15">아첨</option>
+                <option value="16">안심</option>
+                <option value="17">암호</option>
+                <option value="18">약학</option>
+                <option value="19">언어</option>
+                <option value="20">역사학</option>
+                <option value="21">열쇠공</option>
+                <option value="22">오컬트</option>
+                <option value="23">위협</option>
+                <option value="24">의료</option>
+                <option value="25">인류학</option>
+                <option value="26">자료 조사</option>
+                <option value="27">자연 지식</option>
+                <option value="28">종교학</option>
+                <option value="29">증거물 수집</option>
+                <option value="30">지질학</option>
+                <option value="31">진실 판별</option>
+                <option value="32">천문학</option>
+                <option value="33">촬영</option>
+                <option value="34">크툴루 신화</option>
+                <option value="35">화학</option>
+                <option value="36">회계</option>
+                <option value="37">흥정</option>
+              </select>
+              <select name="attr_assist-5-ab3">
+                <option value="0">= 기능3 =</option>
+                <option value="1">감식</option>
+                <option value="2">거리의 법칙</option>
+                <option value="3">건축학</option>
+                <option value="4">경찰 상대</option>
+                <option value="5">고고학</option>
+                <option value="6">고무</option>
+                <option value="7">공예</option>
+                <option value="8">관료제</option>
+                <option value="9">구비전승</option>
+                <option value="10">물리학</option>
+                <option value="11">미술사</option>
+                <option value="12">법률</option>
+                <option value="13">생물학</option>
+                <option value="14">심리학</option>
+                <option value="15">아첨</option>
+                <option value="16">안심</option>
+                <option value="17">암호</option>
+                <option value="18">약학</option>
+                <option value="19">언어</option>
+                <option value="20">역사학</option>
+                <option value="21">열쇠공</option>
+                <option value="22">오컬트</option>
+                <option value="23">위협</option>
+                <option value="24">의료</option>
+                <option value="25">인류학</option>
+                <option value="26">자료 조사</option>
+                <option value="27">자연 지식</option>
+                <option value="28">종교학</option>
+                <option value="29">증거물 수집</option>
+                <option value="30">지질학</option>
+                <option value="31">진실 판별</option>
+                <option value="32">천문학</option>
+                <option value="33">촬영</option>
+                <option value="34">크툴루 신화</option>
+                <option value="35">화학</option>
+                <option value="36">회계</option>
+                <option value="37">흥정</option>
+              </select>
+              <select name="attr_assist-5-ab4">
+                <option value="0">= 기능4 =</option>
+                <option value="1">감식</option>
+                <option value="2">거리의 법칙</option>
+                <option value="3">건축학</option>
+                <option value="4">경찰 상대</option>
+                <option value="5">고고학</option>
+                <option value="6">고무</option>
+                <option value="7">공예</option>
+                <option value="8">관료제</option>
+                <option value="9">구비전승</option>
+                <option value="10">물리학</option>
+                <option value="11">미술사</option>
+                <option value="12">법률</option>
+                <option value="13">생물학</option>
+                <option value="14">심리학</option>
+                <option value="15">아첨</option>
+                <option value="16">안심</option>
+                <option value="17">암호</option>
+                <option value="18">약학</option>
+                <option value="19">언어</option>
+                <option value="20">역사학</option>
+                <option value="21">열쇠공</option>
+                <option value="22">오컬트</option>
+                <option value="23">위협</option>
+                <option value="24">의료</option>
+                <option value="25">인류학</option>
+                <option value="26">자료 조사</option>
+                <option value="27">자연 지식</option>
+                <option value="28">종교학</option>
+                <option value="29">증거물 수집</option>
+                <option value="30">지질학</option>
+                <option value="31">진실 판별</option>
+                <option value="32">천문학</option>
+                <option value="33">촬영</option>
+                <option value="34">크툴루 신화</option>
+                <option value="35">화학</option>
+                <option value="36">회계</option>
+                <option value="37">흥정</option>
+              </select>
+              <select name="attr_assist-5-ab5">
+                <option value="0">= 기능5 =</option>
+                <option value="1">감식</option>
+                <option value="2">거리의 법칙</option>
+                <option value="3">건축학</option>
+                <option value="4">경찰 상대</option>
+                <option value="5">고고학</option>
+                <option value="6">고무</option>
+                <option value="7">공예</option>
+                <option value="8">관료제</option>
+                <option value="9">구비전승</option>
+                <option value="10">물리학</option>
+                <option value="11">미술사</option>
+                <option value="12">법률</option>
+                <option value="13">생물학</option>
+                <option value="14">심리학</option>
+                <option value="15">아첨</option>
+                <option value="16">안심</option>
+                <option value="17">암호</option>
+                <option value="18">약학</option>
+                <option value="19">언어</option>
+                <option value="20">역사학</option>
+                <option value="21">열쇠공</option>
+                <option value="22">오컬트</option>
+                <option value="23">위협</option>
+                <option value="24">의료</option>
+                <option value="25">인류학</option>
+                <option value="26">자료 조사</option>
+                <option value="27">자연 지식</option>
+                <option value="28">종교학</option>
+                <option value="29">증거물 수집</option>
+                <option value="30">지질학</option>
+                <option value="31">진실 판별</option>
+                <option value="32">천문학</option>
+                <option value="33">촬영</option>
+                <option value="34">크툴루 신화</option>
+                <option value="35">화학</option>
+                <option value="36">회계</option>
+                <option value="37">흥정</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="3">
+              <textarea name="attr_desc-assist-5" rows="1" cols="5" placeholder="조력자5의 설명"></textarea>
+            </td>
+          </tr>
+        </table>
+      </div>
+  
+      <fieldset class="repeating_assist" style="display: none;">
+        <table>
+          <tr>
+            <td><span>이름</span></td>
+            <td><input type="text" name="attr_name-repeat-assist" value="" placeholder="추가 조력자 이름"></td>
+            <td>
+              <select name="attr_repeat-assist-ab1">
+                <option value="0">= 기능1 =</option>
+                <option value="1">감식</option>
+                <option value="2">거리의 법칙</option>
+                <option value="3">건축학</option>
+                <option value="4">경찰 상대</option>
+                <option value="5">고고학</option>
+                <option value="6">고무</option>
+                <option value="7">공예</option>
+                <option value="8">관료제</option>
+                <option value="9">구비전승</option>
+                <option value="10">물리학</option>
+                <option value="11">미술사</option>
+                <option value="12">법률</option>
+                <option value="13">생물학</option>
+                <option value="14">심리학</option>
+                <option value="15">아첨</option>
+                <option value="16">안심</option>
+                <option value="17">암호</option>
+                <option value="18">약학</option>
+                <option value="19">언어</option>
+                <option value="20">역사학</option>
+                <option value="21">열쇠공</option>
+                <option value="22">오컬트</option>
+                <option value="23">위협</option>
+                <option value="24">의료</option>
+                <option value="25">인류학</option>
+                <option value="26">자료 조사</option>
+                <option value="27">자연 지식</option>
+                <option value="28">종교학</option>
+                <option value="29">증거물 수집</option>
+                <option value="30">지질학</option>
+                <option value="31">진실 판별</option>
+                <option value="32">천문학</option>
+                <option value="33">촬영</option>
+                <option value="34">크툴루 신화</option>
+                <option value="35">화학</option>
+                <option value="36">회계</option>
+                <option value="37">흥정</option>
+              </select>
+              <select name="attr_repeat-assist-ab2">
+                <option value="0">= 기능2 =</option>
+                <option value="1">감식</option>
+                <option value="2">거리의 법칙</option>
+                <option value="3">건축학</option>
+                <option value="4">경찰 상대</option>
+                <option value="5">고고학</option>
+                <option value="6">고무</option>
+                <option value="7">공예</option>
+                <option value="8">관료제</option>
+                <option value="9">구비전승</option>
+                <option value="10">물리학</option>
+                <option value="11">미술사</option>
+                <option value="12">법률</option>
+                <option value="13">생물학</option>
+                <option value="14">심리학</option>
+                <option value="15">아첨</option>
+                <option value="16">안심</option>
+                <option value="17">암호</option>
+                <option value="18">약학</option>
+                <option value="19">언어</option>
+                <option value="20">역사학</option>
+                <option value="21">열쇠공</option>
+                <option value="22">오컬트</option>
+                <option value="23">위협</option>
+                <option value="24">의료</option>
+                <option value="25">인류학</option>
+                <option value="26">자료 조사</option>
+                <option value="27">자연 지식</option>
+                <option value="28">종교학</option>
+                <option value="29">증거물 수집</option>
+                <option value="30">지질학</option>
+                <option value="31">진실 판별</option>
+                <option value="32">천문학</option>
+                <option value="33">촬영</option>
+                <option value="34">크툴루 신화</option>
+                <option value="35">화학</option>
+                <option value="36">회계</option>
+                <option value="37">흥정</option>
+              </select>
+              <select name="attr_repeat-assist-ab3">
+                <option value="0">= 기능3 =</option>
+                <option value="1">감식</option>
+                <option value="2">거리의 법칙</option>
+                <option value="3">건축학</option>
+                <option value="4">경찰 상대</option>
+                <option value="5">고고학</option>
+                <option value="6">고무</option>
+                <option value="7">공예</option>
+                <option value="8">관료제</option>
+                <option value="9">구비전승</option>
+                <option value="10">물리학</option>
+                <option value="11">미술사</option>
+                <option value="12">법률</option>
+                <option value="13">생물학</option>
+                <option value="14">심리학</option>
+                <option value="15">아첨</option>
+                <option value="16">안심</option>
+                <option value="17">암호</option>
+                <option value="18">약학</option>
+                <option value="19">언어</option>
+                <option value="20">역사학</option>
+                <option value="21">열쇠공</option>
+                <option value="22">오컬트</option>
+                <option value="23">위협</option>
+                <option value="24">의료</option>
+                <option value="25">인류학</option>
+                <option value="26">자료 조사</option>
+                <option value="27">자연 지식</option>
+                <option value="28">종교학</option>
+                <option value="29">증거물 수집</option>
+                <option value="30">지질학</option>
+                <option value="31">진실 판별</option>
+                <option value="32">천문학</option>
+                <option value="33">촬영</option>
+                <option value="34">크툴루 신화</option>
+                <option value="35">화학</option>
+                <option value="36">회계</option>
+                <option value="37">흥정</option>
+              </select>
+              <select name="attr_repeat-assist-ab4">
+                <option value="0">= 기능4 =</option>
+                <option value="1">감식</option>
+                <option value="2">거리의 법칙</option>
+                <option value="3">건축학</option>
+                <option value="4">경찰 상대</option>
+                <option value="5">고고학</option>
+                <option value="6">고무</option>
+                <option value="7">공예</option>
+                <option value="8">관료제</option>
+                <option value="9">구비전승</option>
+                <option value="10">물리학</option>
+                <option value="11">미술사</option>
+                <option value="12">법률</option>
+                <option value="13">생물학</option>
+                <option value="14">심리학</option>
+                <option value="15">아첨</option>
+                <option value="16">안심</option>
+                <option value="17">암호</option>
+                <option value="18">약학</option>
+                <option value="19">언어</option>
+                <option value="20">역사학</option>
+                <option value="21">열쇠공</option>
+                <option value="22">오컬트</option>
+                <option value="23">위협</option>
+                <option value="24">의료</option>
+                <option value="25">인류학</option>
+                <option value="26">자료 조사</option>
+                <option value="27">자연 지식</option>
+                <option value="28">종교학</option>
+                <option value="29">증거물 수집</option>
+                <option value="30">지질학</option>
+                <option value="31">진실 판별</option>
+                <option value="32">천문학</option>
+                <option value="33">촬영</option>
+                <option value="34">크툴루 신화</option>
+                <option value="35">화학</option>
+                <option value="36">회계</option>
+                <option value="37">흥정</option>
+              </select>
+              <select name="attr_repeat-assist-ab5">
+                <option value="0">= 기능5 =</option>
+                <option value="1">감식</option>
+                <option value="2">거리의 법칙</option>
+                <option value="3">건축학</option>
+                <option value="4">경찰 상대</option>
+                <option value="5">고고학</option>
+                <option value="6">고무</option>
+                <option value="7">공예</option>
+                <option value="8">관료제</option>
+                <option value="9">구비전승</option>
+                <option value="10">물리학</option>
+                <option value="11">미술사</option>
+                <option value="12">법률</option>
+                <option value="13">생물학</option>
+                <option value="14">심리학</option>
+                <option value="15">아첨</option>
+                <option value="16">안심</option>
+                <option value="17">암호</option>
+                <option value="18">약학</option>
+                <option value="19">언어</option>
+                <option value="20">역사학</option>
+                <option value="21">열쇠공</option>
+                <option value="22">오컬트</option>
+                <option value="23">위협</option>
+                <option value="24">의료</option>
+                <option value="25">인류학</option>
+                <option value="26">자료 조사</option>
+                <option value="27">자연 지식</option>
+                <option value="28">종교학</option>
+                <option value="29">증거물 수집</option>
+                <option value="30">지질학</option>
+                <option value="31">진실 판별</option>
+                <option value="32">천문학</option>
+                <option value="33">촬영</option>
+                <option value="34">크툴루 신화</option>
+                <option value="35">화학</option>
+                <option value="36">회계</option>
+                <option value="37">흥정</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="3">
+              <textarea name="attr_repeat-desc-assist" rows="1" cols="5" placeholder="추가 조력자의 설명"></textarea>
+            </td>
+          </tr>
+        </table>
+      </fieldset>
+    </div>
+  
+    <div class="sheet-footer">
+      FanMade Cthulhu Confidential Custom Sheet for Roll20 This is NOT official content.<br>
+      Designed & Developed by Rotorri @the_rotorri / commissioned by. Phyllis Oakley / Personal Use Only / DO NOT edit, share, resale without sheet author's permission.
+    </div>
+  </div>
+  <!-- @@@@ 일반기능판정 @@@@ -->
+<rolltemplate class="sheet-rolltemplate-ability">
+    <div class="header">
+      <div class="class">
+        분류 : {{class}}
+      </div>
+      {{#rollTotal() icon-class 1}}
+      <div class="class1"></div>
+      {{/rollTotal() icon-class 1}}
+      {{#rollTotal() icon-class 2}}
+      <div class="class2"></div>
+      {{/rollTotal() icon-class 2}}
+      {{#rollTotal() icon-class 3}}
+      <div class="class3"></div>
+      {{/rollTotal() icon-class 3}}
+      <div class="name">
+        {{name}}
+      </div>
+      {{#rollTotal() icon-class 1}}
+      <div class="class1 back"></div>
+      {{/rollTotal() icon-class 1}}
+      {{#rollTotal() icon-class 2}}
+      <div class="class2 back"></div>
+      {{/rollTotal() icon-class 2}}
+      {{#rollTotal() icon-class 3}}
+      <div class="class3 back"></div>
+      {{/rollTotal() icon-class 3}}
+    </div>
+    
+    <div class="body">
+      {{#rollTotal() dice1 0}}
+      <div class="none">
+        추가 문제
+      </div>
+      {{/rollTotal() dice1 0}}
+      {{#rollTotal() dice1 1}}
+      <div class="dice">
+        {{#rollTotal() roll1 1}}
+        1
+        {{/rollTotal() roll1 1}}
+        {{#rollTotal() roll1 2}}
+        2
+        {{/rollTotal() roll1 2}}
+        {{#rollTotal() roll1 3}}
+        3
+        {{/rollTotal() roll1 3}}
+        {{#rollTotal() roll1 4}}
+        4
+        {{/rollTotal() roll1 4}}
+        {{#rollTotal() roll1 5}}
+        5
+        {{/rollTotal() roll1 5}}
+        {{#rollTotal() roll1 6}}
+        6
+        {{/rollTotal() roll1 6}}
+      </div>
+      {{/rollTotal() dice1 1}}
+      {{#rollGreater() dice1 0}}
+        {{#rollTotal() dice2 1}}
+        <div class="plus">
+          +
+        </div>
+        <div class="dice">
+          {{#rollTotal() roll2 1}}
+          1
+          {{/rollTotal() roll2 1}}
+          {{#rollTotal() roll2 2}}
+          2
+          {{/rollTotal() roll2 2}}
+          {{#rollTotal() roll2 3}}
+          3
+          {{/rollTotal() roll2 3}}
+          {{#rollTotal() roll2 4}}
+          4
+          {{/rollTotal() roll2 4}}
+          {{#rollTotal() roll2 5}}
+          5
+          {{/rollTotal() roll2 5}}
+          {{#rollTotal() roll2 6}}
+          6
+          {{/rollTotal() roll2 6}}
+        </div>
+        {{/rollTotal() dice2 1}}
+      {{/rollGreater() dice1 0}}
+      {{#rollGreater() dice1 0}}
+        {{#rollGreater() dice2 0}}
+          {{#rollTotal() dice3 1}}
+          <div class="plus">
+            +
+          </div>
+          <div class="dice">
+            {{#rollTotal() roll3 1}}
+            1
+            {{/rollTotal() roll3 1}}
+            {{#rollTotal() roll3 2}}
+            2
+            {{/rollTotal() roll3 2}}
+            {{#rollTotal() roll3 3}}
+            3
+            {{/rollTotal() roll3 3}}
+            {{#rollTotal() roll3 4}}
+            4
+            {{/rollTotal() roll3 4}}
+            {{#rollTotal() roll3 5}}
+            5
+            {{/rollTotal() roll3 5}}
+            {{#rollTotal() roll3 6}}
+            6
+            {{/rollTotal() roll3 6}}
+          </div>
+          {{/rollTotal() dice3 1}}
+        {{/rollGreater() dice2 0}}
+      {{/rollGreater() dice1 0}}
+      {{#rollGreater() dice1 0}}
+        {{#rollGreater() bonus 0}}
+        <div class="plus">
+          +
+        </div>
+        <div class="dice bonus">
+          {{bonus-v}}
+        </div>
+        {{/rollGreater() bonus 0}}
+        {{#rollGreater() penalty 0}}
+        <div class="plus minus">
+          -
+        </div>
+        <div class="dice penalty">
+          {{penalty-v}}
+        </div>
+        {{/rollGreater() penalty 0}}
+      {{/rollGreater() dice1 0}}
+    </div>
+  </rolltemplate>
+  
+  <!-- @@@@ GM 매크로 @@@@ -->
+  <rolltemplate class="sheet-rolltemplate-gm">
+    <div class="header">
+      <div class="class">
+        GM 난관
+      </div>
+      <div class="name">
+        {{gmtitle}}
+      </div>
+    </div>
+    <div class="body">
+      <div class="trioDice">
+        <div class="trio1">
+          <div class="trioName">
+            진전
+          </div>
+          <div class="trioValue">
+            {{trio1}}
+          </div>
+        </div>
+        <div class="trio2">
+          <div class="trioName">
+            답보
+          </div>
+          <div class="trioValue">
+            {{trio2}}
+          </div>
+        </div>
+        <div class="trio3">
+          <div class="trioName">
+            좌절
+          </div>
+          <div class="trioValue">
+            {{trio3}}
+          </div>
+        </div>
+      </div>
+  
+      <div class="selectAb">
+        <div class="attrName">
+          판정
+        </div>
+        {{selectAb}}
+      </div>
+  
+      <div class="gmPenalty">
+        <div class="attrName">
+          페널티
+        </div>
+        {{gmPenalty}}
+      </div>
+      <div class="question">
+        <div class="attrName">
+          추가 문제
+        </div>
+        {{question}}
+      </div>
+    </div>
+  </rolltemplate>
+  
+<script type="text/worker">
+    const tabArray = ["off","on"];
+    tabArray.forEach(button => {
+        on(`clicked:${button}`, function() {
+            setAttrs({
+                growTab: button
+            });
+        });
+    });
+  
+    let totalArray = [];
+    for(let i = 1; i <= 57; i++) {
+      totalArray.push('g'+i);
+    }
+  
+    let totalCount1 = [];
+    for(let i = 1; i <= 38; i++) {
+      totalCount1.push('ab'+i);
+    }
+  
+    let totalCount2 = [];
+    for(let i = 1; i <= 19; i++) {
+      totalCount2.push('st'+i);
+    }
+  
+    let totalCount3 = [];
+    for(let i = 1; i <= 57; i++) {
+      totalCount3.push('stdice'+i);
+    }
+  
+    for(let i = 1; i < 20; i++) {
+      let v1 = i*3-2;
+      let v2 = i*3-1;
+      let v3 = i*3;
+      window["subArray"+i] = ["g"+v1, "g"+v2,"g"+v3];
+    }
+    let targetArray;
+  
+    totalArray.forEach(attr => {
+      on(`change:${attr} sheet:opened`, function() {
+        switch (attr) {
+          case "g1" : case "g2" : case "g3" : targetArray = subArray1; break;
+          case "g4" : case "g5" : case "g6" : targetArray = subArray2; break;
+          case "g7" : case "g8" : case "g9" : targetArray = subArray3; break;
+          case "g10" : case "g11" : case "g12" : targetArray = subArray4; break;
+          case "g13" : case "g14" : case "g15" : targetArray = subArray5; break;
+          case "g16" : case "g17" : case "g18" : targetArray = subArray6; break;
+          case "g19" : case "g20" : case "g21" : targetArray = subArray7; break;
+          case "g22" : case "g23" : case "g24" : targetArray = subArray8; break;
+          case "g25" : case "g26" : case "g27" : targetArray = subArray9; break;
+          case "g28" : case "g29" : case "g30" : targetArray = subArray10; break;
+          case "g31" : case "g32" : case "g33" : targetArray = subArray11; break;
+          case "g34" : case "g35" : case "g36" : targetArray = subArray12; break;
+          case "g37" : case "g38" : case "g39" : targetArray = subArray13; break;
+          case "g40" : case "g41" : case "g42" : targetArray = subArray14; break;
+          case "g43" : case "g44" : case "g45" : targetArray = subArray15; break;
+          case "g46" : case "g47" : case "g48" : targetArray = subArray16; break;
+          case "g49" : case "g50" : case "g51" : targetArray = subArray17; break;
+          case "g52" : case "g53" : case "g54" : targetArray = subArray18; break;
+          case "g55" : case "g56" : case "g57" : targetArray = subArray19; break;
+        }
+        targetArray.forEach(targetAttr => {
+          on(`change:${targetAttr}`, function() {
+            let sum = 0;
+            getAttrs(targetArray, function(obj) {
+              for(value in obj) {
+                sum = sum + parseInt(obj[value]);
+              };
+              switch (attr) {
+                case "g1" : case "g2" : case "g3" : setAttrs({total1 : sum}); break;
+                case "g4" : case "g5" : case "g6" : setAttrs({total2 : sum}); break;
+                case "g7" : case "g8" : case "g9" : setAttrs({total3 : sum});break;
+                case "g10" : case "g11" : case "g12" : setAttrs({total4 : sum});break;
+                case "g13" : case "g14" : case "g15" : setAttrs({total5 : sum});break;
+                case "g16" : case "g17" : case "g18" : setAttrs({total6 : sum});break;
+                case "g19" : case "g20" : case "g21" : setAttrs({total7 : sum});break;
+                case "g22" : case "g23" : case "g24" : setAttrs({total8 : sum});break;
+                case "g25" : case "g26" : case "g27" : setAttrs({total9 : sum});break;
+                case "g28" : case "g29" : case "g30" : setAttrs({total10 : sum});break;
+                case "g31" : case "g32" : case "g33" : setAttrs({total11 : sum});break;
+                case "g34" : case "g35" : case "g36" : setAttrs({total12 : sum});break;
+                case "g37" : case "g38" : case "g39" : setAttrs({total13 : sum});break;
+                case "g40" : case "g41" : case "g42" : setAttrs({total14 : sum});break;
+                case "g43" : case "g44" : case "g45" : setAttrs({total15 : sum});break;
+                case "g46" : case "g47" : case "g48" : setAttrs({total16 : sum});break;
+                case "g49" : case "g50" : case "g51" : setAttrs({total17 : sum});break;
+                case "g52" : case "g53" : case "g54" : setAttrs({total18 : sum});break;
+                case "g55" : case "g56" : case "g57" : setAttrs({total19 : sum});break;
+              }
+            });
+          });
+        });
+      });
+    });
+  
+    totalCount1.forEach(attr => {
+      on(`change:${attr} sheet:opened`, function() {
+        let sum = 0;
+        getAttrs(totalCount1, function(obj) {
+          for(value in obj) {
+            sum = sum + parseInt(obj[value]);
+          };
+          setAttrs({abilityTotal1 : sum})
+        });
+      });
+    });
+  
+    totalCount2.forEach(attr => {
+      on(`change:${attr} sheet:opened`, function() {
+        let sum = 0;
+        getAttrs(totalCount2, function(obj) {
+          for(value in obj) {
+            sum = sum + parseInt(obj[value]);
+          };
+          setAttrs({abilityTotal2 : sum})
+        });
+      });
+    });
+  
+    totalCount3.forEach(attr => {
+      on(`change:${attr} sheet:opened`, function() {
+        let sum = 0;
+        getAttrs(totalCount3, function(obj) {
+          for(value in obj) {
+            sum = sum + parseInt(obj[value]);
+          };
+          setAttrs({abilityTotal3 : sum})
+          let check = parseInt(obj[`${attr}`]) || 0;
+          let dice = check ? 1 : 0;
+          switch(attr) {
+            case "stdice1" : setAttrs({diceCheck1 : dice}); break;
+            case "stdice2" : setAttrs({diceCheck2 : dice}); break;
+            case "stdice3" : setAttrs({diceCheck3 : dice}); break;
+            case "stdice4" : setAttrs({diceCheck4 : dice}); break;
+            case "stdice5" : setAttrs({diceCheck5 : dice}); break;
+            case "stdice6" : setAttrs({diceCheck6 : dice}); break;
+            case "stdice7" : setAttrs({diceCheck7 : dice}); break;
+            case "stdice8" : setAttrs({diceCheck8 : dice}); break;
+            case "stdice9" : setAttrs({diceCheck9 : dice}); break;
+            case "stdice10" : setAttrs({diceCheck10 : dice}); break;
+            case "stdice11" : setAttrs({diceCheck11 : dice}); break;
+            case "stdice12" : setAttrs({diceCheck12 : dice}); break;
+            case "stdice13" : setAttrs({diceCheck13 : dice}); break;
+            case "stdice14" : setAttrs({diceCheck14 : dice}); break;
+            case "stdice15" : setAttrs({diceCheck15 : dice}); break;
+            case "stdice16" : setAttrs({diceCheck16 : dice}); break;
+            case "stdice17" : setAttrs({diceCheck17 : dice}); break;
+            case "stdice18" : setAttrs({diceCheck18 : dice}); break;
+            case "stdice19" : setAttrs({diceCheck19 : dice}); break;
+            case "stdice20" : setAttrs({diceCheck20 : dice}); break;
+            case "stdice21" : setAttrs({diceCheck21 : dice}); break;
+            case "stdice22" : setAttrs({diceCheck22 : dice}); break;
+            case "stdice23" : setAttrs({diceCheck23 : dice}); break;
+            case "stdice24" : setAttrs({diceCheck24 : dice}); break;
+            case "stdice25" : setAttrs({diceCheck25 : dice}); break;
+            case "stdice26" : setAttrs({diceCheck26 : dice}); break;
+            case "stdice27" : setAttrs({diceCheck27 : dice}); break;
+            case "stdice28" : setAttrs({diceCheck28 : dice}); break;
+            case "stdice29" : setAttrs({diceCheck29 : dice}); break;
+            case "stdice30" : setAttrs({diceCheck30 : dice}); break;
+            case "stdice31" : setAttrs({diceCheck31 : dice}); break;
+            case "stdice32" : setAttrs({diceCheck32 : dice}); break;
+            case "stdice33" : setAttrs({diceCheck33 : dice}); break;
+            case "stdice34" : setAttrs({diceCheck34 : dice}); break;
+            case "stdice35" : setAttrs({diceCheck35 : dice}); break;
+            case "stdice36" : setAttrs({diceCheck36 : dice}); break;
+            case "stdice37" : setAttrs({diceCheck37 : dice}); break;
+            case "stdice38" : setAttrs({diceCheck38 : dice}); break;
+            case "stdice39" : setAttrs({diceCheck39 : dice}); break;
+            case "stdice40" : setAttrs({diceCheck40 : dice}); break;
+            case "stdice41" : setAttrs({diceCheck41 : dice}); break;
+            case "stdice42" : setAttrs({diceCheck42 : dice}); break;
+            case "stdice43" : setAttrs({diceCheck43 : dice}); break;
+            case "stdice44" : setAttrs({diceCheck44 : dice}); break;
+            case "stdice45" : setAttrs({diceCheck45 : dice}); break;
+            case "stdice46" : setAttrs({diceCheck46 : dice}); break;
+            case "stdice47" : setAttrs({diceCheck47 : dice}); break;
+            case "stdice48" : setAttrs({diceCheck48 : dice}); break;
+            case "stdice49" : setAttrs({diceCheck49 : dice}); break;
+            case "stdice50" : setAttrs({diceCheck50 : dice}); break;
+            case "stdice51" : setAttrs({diceCheck51 : dice}); break;
+            case "stdice52" : setAttrs({diceCheck52 : dice}); break;
+            case "stdice53" : setAttrs({diceCheck53 : dice}); break;
+            case "stdice54" : setAttrs({diceCheck54 : dice}); break;
+            case "stdice55" : setAttrs({diceCheck55 : dice}); break;
+            case "stdice56" : setAttrs({diceCheck56 : dice}); break;
+            case "stdice57" : setAttrs({diceCheck57 : dice}); break;
+          }
+        });
+      });
+    });
+  </script>
+  
