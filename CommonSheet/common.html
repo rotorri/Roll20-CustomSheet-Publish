@@ -1,0 +1,397 @@
+<!--Roll20 custom sheet for common rules develop & design by @the_rotorri on twitter. this sheet developed for public release-->
+<!--무료공개 및 배포용 범용 커스텀 시트. 제작 로토리-->
+<!--제작자 허가 없는 출처삭제 무단 공유 및 재배포, 허용범위 이상의 원본 코드 무단 편집, 타 커미션 요청을 금지합니다-->
+<!--2022.10 제작-->
+<!-- contact : the_rotorri@Twitter // github.com/rotorri -->
+
+<div class="sheet-common rotorri">
+    <div class="sheet-header">
+      <div class="sheet-rule-title">
+        <input type="text" name="attr_ruleTitle" placeholder="룰이름" value="당신의 룰">
+        <input type="text" name="attr_rulesubTitle" placeholder="부제목" value="">
+      </div>
+      <div class="sheet-player">
+        <p>
+          custom sheet for common TRPG<br>
+          develop & design by. Rotorri
+        </p>
+        <span>플레이어 명</span>
+        <input type="text" name="attr_player" placeholder="플레이어 이름">
+      </div>
+    </div>
+    
+    <div class="sheet-profile">
+      <h3>캐릭터정보</h3>
+      <div class="sheet-profile-input">
+        <div class="sheet-profile-left">
+          <table>
+            <tr>
+              <td><span>이름</span></td>
+              <td colspan="3"><input type="text" name="attr_pc-name"></td>
+            </tr>
+            <tr>
+              <td><span>성별</span></td>
+              <td><input type="text" name="attr_pc-sex" placeholder="및 젠더"></td>
+              <td><span>나이</span></td>
+              <td><input type="text" name="attr_pc-age" placeholder="ex) 23세, ???세"></td>
+            </tr>
+            <tr>
+              <td><span>특징</span></td>
+              <td colspan="3"><input type="text" name="attr_pc-job" placeholder="직업, 종족 등"></td>
+            </tr>
+          </table>
+        </div>
+  
+        <div class="sheet-profile-right">
+          <table>
+            <tr>
+              <td><span>레벨</span></td>
+              <td><input type="number" name="attr_pc-level" value="1"></td>
+            </tr>
+            <tr>
+              <td><span>HP</span></td>
+              <td><input type="number" name="attr_pc-hp" placeholder="현재">/<input type="number" name="attr_pc-hpmax" min="0" placeholder="MAX"></td>
+            </tr>
+            <tr>
+              <td><span>MP</span></td>
+              <td><input type="number" name="attr_pc-mp" placeholder="현재">/<input type="number" name="attr_pc-mpmax" min="0" placeholder="MAX"></td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+    
+    <div class="sheet-stat">
+      <h3>기능치 스탯</h3>
+      <div class="sheet-stat-table">
+        <table>
+          <tr>
+            <td><span>스탯 명</span></td>
+            <td colspan="2"><span>보유 수치</span></td>
+            <td colspan="2"><span>판정 주사위 ex) 1d6, 1d100..</span></td>
+          </tr>
+          <tr>
+            <td><input type="text" name="attr_stat-1-name" placeholder="힘, 민첩.."></td>
+            <td><input type="number" name="attr_stat-1-value" placeholder="값"></td>
+            <td><button type="roll" value="&{template:use}{{use=[[1]]}}{{name=@{stat-1-name}}}{{goal1=@{stat-1-value}}}"></button></td>
+            <td><input type="number" name="attr_stat-1-dice" value="1"><span>D</span><input type="number" name="attr_stat-1-target" value="6"></td>
+            <td><button type="roll" name="roll-stat1" value="&{template:stat}{{name=@{stat-1-name}}}{{goal1=[[@{stat-1-value}]]}}{{goal2=@{stat-1-value}}}{{dice=[[@{stat-1-dice}d@{stat-1-target}]]}}"></button></td>
+          </tr>
+        </table>
+        <table>
+          <tr>
+            <td><input type="text" name="attr_stat-2-name" placeholder="지능, 이성.."></td>
+            <td><input type="number" name="attr_stat-2-value" placeholder="값"></td>
+            <td><button type="roll" value="&{template:use}{{use=[[1]]}}{{name=@{stat-2-name}}}{{goal1=@{stat-2-value}}}"></button></td>
+            <td><input type="number" name="attr_stat-2-dice" value="1"><span>D</span><input type="number" name="attr_stat-2-target" value="6"></td>
+            <td><button type="roll" name="roll-stat2" value="&{template:stat}{{name=@{stat-2-name}}}{{goal1=[[@{stat-2-value}]]}}{{goal2=@{stat-2-value}}}{{dice=[[@{stat-2-dice}d@{stat-2-target}]]}}"></button></td>
+          </tr>
+        </table>
+        <table>
+          <tr>
+            <td><input type="text" name="attr_stat-3-name" placeholder="이동력, 말재주.."></td>
+            <td><input type="number" name="attr_stat-3-value" placeholder="값"></td>
+            <td><button type="roll" value="&{template:use}{{use=[[1]]}}{{name=@{stat-3-name}}}{{goal1=@{stat-3-value}}}"></button></td>
+            <td><input type="number" name="attr_stat-3-dice" value="1"><span>D</span><input type="number" name="attr_stat-3-target" value="6"></td>
+            <td><button type="roll" name="roll-stat3" value="&{template:stat}{{name=@{stat-3-name}}}{{goal1=[[@{stat-3-value}]]}}{{goal2=@{stat-3-value}}}{{dice=[[@{stat-3-dice}d@{stat-3-target}]]}}"></button></td>
+          </tr>
+        </table>
+        <table>
+          <tr>
+            <td><input type="text" name="attr_stat-4-name" placeholder="행운, 재력.."></td>
+            <td><input type="number" name="attr_stat-4-value" placeholder="값"></td>
+            <td><button type="roll" value="&{template:use}{{use=[[1]]}}{{name=@{stat-4-name}}}{{goal1=@{stat-4-value}}}"></button></td>
+            <td><input type="number" name="attr_stat-4-dice" value="1"><span>D</span><input type="number" name="attr_stat-4-target" value="6"></td>
+            <td><button type="roll" name="roll-stat4" value="&{template:stat}{{name=@{stat-4-name}}}{{goal1=[[@{stat-4-value}]]}}{{goal2=@{stat-4-value}}}{{dice=[[@{stat-4-dice}d@{stat-4-target}]]}}"></button></td>
+          </tr>
+        </table>
+        <fieldset class="repeating_stat" style="display:none;">
+          <table>
+            <tr>
+              <td><input type="text" name="attr_stat-repeat-name" placeholder="추가스탯 이름"></td>
+              <td><input type="number" name="attr_stat-repeat-value" placeholder="값"></td>
+              <td><button type="roll" value="&{template:use}{{use=[[1]]}}{{name=@{stat-repeat-name}}}{{goal1=@{stat-repeat-value}}}"></button></td>
+              <td><input type="number" name="attr_stat-repeat-dice" value="1"><span>D</span><input type="number" name="attr_stat-repeat-target" value="6"></td>
+              <td><button type="roll" name="roll-statrepeat" value="&{template:stat}{{name=@{stat-repeat-name}}}{{goal1=[[@{stat-repeat-value}]]}}{{goal2=@{stat-repeat-value}}}{{dice=[[@{stat-repeat-dice}d@{stat-repeat-target}]]}}"></button></td>
+            </tr>
+          </table>
+        </fieldset>
+      </div>
+    </div>
+    
+    <div class="sheet-advance">
+      <h3>커스텀 굴림</h3>
+      <div class="sheet-advance-table">
+        <div class="sheet-advance-dice">
+          <table>
+            <tr>
+              <td>
+                <input type="text" name="attr_ad-name-1" placeholder="굴림1 이름 ex)데미지">
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <input type="number" name="attr_ad-dice-1-a" min="1" value="1">
+                <span>D</span>
+                <input type="number" name="attr_ad-dice-1-b" min="2" value="6">
+              </td>
+            </tr>
+            <tr>
+              <td><button type="roll" name="roll-advance1" value="&{template:advance}{{name=@{ad-name-1}}}{{dice1=@{ad-dice-1-a}D@{ad-dice-1-b}}}{{dice2=[[@{ad-dice-1-a}d@{ad-dice-1-b}]]}}"></button></td>
+            </tr>
+          </table>
+          <table>
+            <tr>
+              <td>
+                <input type="text" name="attr_ad-name-2" placeholder="굴림2 이름 ex)보너스">
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <input type="number" name="attr_ad-dice-2-a" min="1" value="1">
+                <span>D</span>
+                <input type="number" name="attr_ad-dice-2-b" min="2" value="6">
+              </td>
+            </tr>
+            <tr>
+              <td><button type="roll" name="roll-advance2" value="&{template:advance}{{name=@{ad-name-2}}}{{dice1=@{ad-dice-1-a}D@{ad-dice-1-b}}}{{dice2=[[@{ad-dice-1-a}d@{ad-dice-1-b}]]}}"></button></td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+    
+    <div class="sheet-skill">
+      <h3>스킬</h3>
+      <div class="sheet-skill-contents">
+        <table>
+          <tr>
+            <td><span>스킬 명</span></td>
+            <td colspan="2"><span>설명</span></td>
+            <td><span>주사위 설정</span></td>
+            <td colspan="2"><span>목표 성공치</span></td>
+          </tr>
+          <tr>
+            <td><input type="text" placeholder="스킬이름" name="attr_skill-name-1"></td>
+            <td><input type="text" placeholder="보조설명" name="attr_skill-desc-1"></td>
+            <td><button type="roll" value="&{template:use}{{use=[[2]]}}{{name=@{skill-name-1}}}{{goal1=@{skill-desc-1}}}"></button></td>
+            <td>
+              <input type="number" name="attr_skill-dice-1" value="1" />
+              <span>D</span>
+              <input type="number" name="attr_skill-dice-hedron-1" value="6">
+            </td>
+            <td>
+              <input type="number" value="3" name="attr_skill-target-1" min="0">
+            </td>
+            <td>
+              <button type="roll" name="roll-skill1" value="&{template:skill}{{name=@{skill-name-1}}}{{desc=@{skill-desc-1}}}{{goal1=[[@{skill-target-1}]]}}{{goal2=@{skill-target-1}}}{{dice=[[@{skill-dice-1}d@{skill-dice-hedron-1}]]}}"></button>
+            </td>
+          </tr>
+        </table>
+        <table>
+          <tr>
+            <td><input type="text" placeholder="스킬이름" name="attr_skill-name-2"></td>
+            <td><input type="text" placeholder="보조설명" name="attr_skill-desc-2"></td>
+            <td><button type="roll" value="&{template:use}{{use=[[2]]}}{{name=@{skill-name-2}}}{{goal1=@{skill-desc-2}}}"></button></td>
+            <td>
+              <input type="number" name="attr_skill-dice-2" value="1" />
+              <span>D</span>
+              <input type="number" name="attr_skill-dice-hedron-2" value="6">
+            </td>
+            <td>
+              <input type="number" value="0" name="attr_skill-target-2" min="0">
+            </td>
+            <td>
+              <button type="roll" name="roll-skill2" value="&{template:skill}{{name=@{skill-name-2}}}{{desc=@{skill-desc-2}}}{{goal1=[[@{skill-target-2}]]}}{{goal2=@{skill-target-2}}}{{dice=[[@{skill-dice-2}d@{skill-dice-hedron-2}]]}}"></button>
+            </td>
+          </tr>
+        </table>
+        <table>
+          <tr>
+            <td><input type="text" placeholder="스킬이름" name="attr_skill-name-3"></td>
+            <td><input type="text" placeholder="보조설명" name="attr_skill-desc-3"></td>
+            <td><button type="roll" value="&{template:use}{{use=[[2]]}}{{name=@{skill-name-3}}}{{goal1=@{skill-desc-3}}}"></button></td>
+            <td>
+              <input type="number" name="attr_skill-dice-3" value="1" />
+              <span>D</span>
+              <input type="number" name="attr_skill-dice-hedron-3" value="6">
+            </td>
+            <td>
+              <input type="number" value="0" name="attr_skill-target-3" min="0">
+            </td>
+            <td>
+              <button type="roll" name="roll-skill3" value="&{template:skill}{{name=@{skill-name-3}}}{{desc=@{skill-desc-3}}}{{goal1=[[@{skill-target-3}]]}}{{goal2=@{skill-target-3}}}{{dice=[[@{skill-dice-3}d@{skill-dice-hedron-3}]]}}"></button>
+            </td>
+          </tr>
+        </table>
+        <fieldset class="repeating_skill" style="display:none;">
+          <table>
+            <tr>
+              <td><input type="text" placeholder="스킬이름" name="attr_skill-name-repeat"></td>
+              <td><input type="text" placeholder="보조설명" name="attr_skill-desc-repeat"></td>
+              <td><button type="roll" value="&{template:use}{{use=[[2]]}}{{name=@{skill-name-repeat}}}{{goal1=@{skill-desc-repeat}}}"></button></td>
+              <td>
+                <input type="number" name="attr_skill-dice-repeat" value="1" />
+                <span>D</span>
+                <input type="number" name="attr_skill-dice-hedron-repeat" value="6">
+              </td>
+              <td>
+                <input type="number" value="0" name="attr_skill-target-repeat" min="0">
+              </td>
+              <td>
+                <button type="roll" name="roll-skillrepeat" value="&{template:skill}{{name=@{skill-name-repeat}}}{{desc=@{skill-desc-repeat}}}{{goal1=[[@{skill-target-repeat}]]}}{{goal2=@{skill-target-repeat}}}{{dice=[[@{skill-dice-repeat}d@{skill-dice-hedron-repeat}]]}}"></button>
+              </td>
+            </tr>
+          </table>
+        </fieldset>
+      </div>
+    </div>
+    
+    <div class="sheet-twin">
+      <div class="sheet-twin-left">
+        <h3>소지품</h3>
+        <div class="sheet-inventory">
+          <div class="sheet-inventory-row">
+            <input type="checkbox" name="attr_checkbox-had-1" value="" />
+            <input type="text" name="attr_inventory-name-1" value="" placeholder="아이템 이름">
+            <input type="checkbox" name="attr_inventory-toggle-1">
+            <textarea name="attr_inventory-desc-1" placeholder="아이템 설명"></textarea>
+          </div>
+          <div class="sheet-inventory-row">
+            <input type="checkbox" name="attr_checkbox-had-2" value="" />
+            <input type="text" name="attr_inventory-name-2" value="" placeholder="아이템 이름">
+            <input type="checkbox" name="attr_inventory-toggle-2">
+            <textarea name="attr_inventory-desc-2" placeholder="아이템 설명"></textarea>
+          </div>
+          <div class="sheet-inventory-row">
+            <input type="checkbox" name="attr_checkbox-had-3" value="" />
+            <input type="text" name="attr_inventory-name-3" value="" placeholder="아이템 이름">
+            <input type="checkbox" name="attr_inventory-toggle-3">
+            <textarea name="attr_inventory-desc-3" placeholder="아이템 설명"></textarea>
+          </div>
+          <fieldset class="repeating_inventory" style="display:none;">
+            <div class="sheet-inventory-row">
+              <input type="checkbox" name="attr_checkbox-had-repeat" value="" />
+              <input type="text" name="attr_inventory-name-repeat" value="" placeholder="아이템 이름">
+              <input type="checkbox" name="attr_inventory-toggle-repeat">
+              <textarea name="attr_inventory-desc-repeat" placeholder="아이템 설명"></textarea>
+            </div>
+          </fieldset>
+        </div>
+      </div>
+      <div class="sheet-twin-right">
+        <h3>인물관계</h3>
+        <div class="sheet-friends">
+          <div class="sheet-friends-row">
+            <input type="text" placeholder="캐릭터 명" name="attr_friends-1">
+            <input type="text" placeholder="관계/감정" name="attr_friends-1-keyword">
+            <input type="checkbox" name="attr_friends-1-memo-toggle">
+            <textarea name="attr_friends-1-memo" placeholder="인물과의 에피소드"></textarea>
+          </div>
+          <div class="sheet-friends-row">
+            <input type="text" placeholder="캐릭터 명" name="attr_friends-2">
+            <input type="text" placeholder="관계/감정" name="attr_friends-2-keyword">
+            <input type="checkbox" name="attr_friends-2-memo-toggle">
+            <textarea name="attr_friends-2-memo" placeholder="인물과의 에피소드"></textarea>
+          </div>
+          <div class="sheet-friends-row">
+            <input type="text" placeholder="캐릭터 명" name="attr_friends-3">
+            <input type="text" placeholder="관계/감정" name="attr_friends-3-keyword">
+            <input type="checkbox" name="attr_friends-3-memo-toggle">
+            <textarea name="attr_friends-3-memo" placeholder="인물과의 에피소드"></textarea>
+          </div>
+          <fieldset class="repeating_inventory" style="display:none;">
+            <div class="sheet-friends-row">
+              <input type="text" placeholder="캐릭터 명" name="attr_friends-repeat">
+              <input type="text" placeholder="관계/감정" name="attr_friends-repeat-keyword">
+              <input type="checkbox" name="attr_friends-repeat-memo-toggle">
+              <textarea name="attr_friends-repeat-memo" placeholder="인물과의 에피소드"></textarea>
+            </div>
+          </fieldset>
+        </div>
+      </div>
+    </div>
+    
+    <div class="sheet-memo">
+    <textarea name="attr_memo" cols="30" rows="10" placeholder="기타 메모란"></textarea>
+    </div>
+    
+    <div class="sheet-footer">
+      <p>
+        Roll20 Custom Sheet for Common TRPG rule. This is NOT commercial content.<br>
+        Designed & Developed by Rotorri @the_rotorri / Personal Use Only / DO NOT edit, share, resale without sheet author's permission.<br>
+        Contact me : <a href="https://github.com/rotorri">github</a> & <a href="https://twitter.com/the_rotorri">Twitter</a>
+      </p>
+    </div>
+</div>
+
+<!--@@@@ 스탯 판정 @@@@-->
+<rolltemplate class="sheet-rolltemplate-stat">
+    <div class="header">
+        판정 : {{name}}
+    </div>
+    <div class="body">
+        {{#rollGreater() goal1 0}}
+        <div class="goal">
+            스탯 값 : {{goal2}}
+        </div>
+        {{/rollGreater() goal1 0}}
+        <div class="dice">
+            굴림치 : {{dice}}
+        </div>
+    </div>
+</rolltemplate>
+
+<!--@@@@ 스킬 판정 @@@@-->
+<rolltemplate class="sheet-rolltemplate-skill">
+    <div class="header">
+        ! {{name}} !
+    </div>
+    <div class="body">
+        <div class="desc">
+            :: 설명 ::<br>
+            {{desc}}
+        </div>
+        {{#rollGreater() goal1 0}}
+        <div class="goal">
+            목표치 : {{goal2}}
+        </div>
+        {{/rollGreater() goal1 0}}
+        <div class="dice">
+            굴림치 : {{dice}}
+        </div>
+    </div>
+</rolltemplate>
+
+<!--@@@@ 커스텀 판정 @@@@-->
+<rolltemplate class="sheet-rolltemplate-advance">
+    <div class="header">
+        {{name}}
+    </div>
+    <div class="body">
+        <div class="result">
+            {{dice1}}
+        </div>
+        <div class="dice">
+            결과 : {{dice2}}
+        </div>
+    </div>
+</rolltemplate>
+
+<!--@@@@ 스탯 스킬 사용 판정 @@@@-->
+<rolltemplate class="sheet-rolltemplate-use">
+    <div class="header">
+        사용 선언 : {{name}}
+    </div>
+    <div class="body">
+        <div class="goal">
+            {{#rollTotal() use 1}}
+            보유 값 : {{goal1}}
+            {{/rollTotal() use 1}}
+            {{#rollTotal() use 2}}
+            :: 설명 ::<br>
+            {{goal1}}
+            {{/rollTotal() use 2}}
+        </div>
+    </div>
+</rolltemplate>

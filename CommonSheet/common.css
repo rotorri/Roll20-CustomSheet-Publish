@@ -1,0 +1,320 @@
+@import url('https://cdn.jsdelivr.net/npm/galmuri@latest/dist/galmuri.css');
+
+.rotorri,
+.sheet-rolltemplate-skill,
+.sheet-rolltemplate-stat,
+.sheet-rolltemplate-use,
+.sheet-rolltemplate-advance {
+  font-family: Galmuri9;
+  padding: 10px;
+  color: #fff;
+  background: url('https://imgur.com/wMCUeKE.png') 0 0 / auto repeat; /* 붉은벽돌*/ 
+  background: url('https://imgur.com/4Jd1UHt.png') 0 0 / auto repeat; /* 회색벽돌*/  
+  background: url('https://imgur.com/x0KhExC.png') 0 0 / auto repeat;
+}
+
+.rotorri {
+  padding-bottom: 0px;
+}
+
+.rotorri p {
+  font-family: Galmuri9;
+  font-size: 9px;
+}
+
+.rotorri input[type=text],
+.rotorri input[type=number],
+.rotorri textarea {
+  background: black;
+  color: #fff;
+  padding: 3px 8px;
+  width: 100%;
+}
+
+.rotorri textarea {
+  min-height: 40px;
+  resize: vertical;
+}
+
+.ui-dialog .charsheet .sheet-common button[type=roll]::before {
+  font-family: inherit;
+  font-size: 15px;
+}
+
+.ui-dialog .charsheet .sheet-common .sheet-stat-table td:nth-child(3) button[type=roll]::before,
+.ui-dialog .charsheet .sheet-common .sheet-skill-contents td:nth-child(3) button[type=roll]::before {
+  content: '사용선언';
+}
+
+.ui-dialog .charsheet .sheet-common .sheet-stat-table td:nth-child(5) button[type=roll]::before,
+.ui-dialog .charsheet .sheet-common .sheet-skill-contents td:nth-child(6) button[type=roll]::before {
+  content: '굴림판정';
+}
+
+.ui-dialog .charsheet .sheet-common .sheet-advance-table button {
+  padding: 2px 10px;
+}
+
+.ui-dialog .charsheet .sheet-common .sheet-advance-table button[name=roll-advance1]::before {
+  content: '커스텀 굴림 1';
+}
+.ui-dialog .charsheet .sheet-common .sheet-advance-table button[name=roll-advance2]::before {
+  content: '커스텀 굴림 2';
+}
+
+.rotorri table {
+  margin-top: -5px;
+  width: 100%;
+}
+
+.rotorri .repcontrol {
+  padding: 4px;
+}
+
+.rotorri td {
+  border: 5px solid transparent;
+}
+
+.rotorri span {
+  margin: 0 5px;
+  color: #bbb;
+}
+
+.rotorri input::-webkit-outer-spin-button,
+.rotorri input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.rotorri input[type=number] {
+    -moz-appearance: textfield;
+    text-align: center;
+}
+
+.sheet-common > div {
+  border: 6px double #ffaa00;
+  margin-bottom: 20px;
+  padding: 10px;
+  background: #222;
+}
+
+.sheet-common .sheet-header {
+  margin-top: 10px;
+  padding-bottom: 15px;
+}
+
+.sheet-header .sheet-rule-title {
+  display: inline-block;
+  width: 55%;
+}
+
+.sheet-header .sheet-rule-title input {
+  background: none;
+  border: none;
+  border-radius: 0;
+  border-bottom: 1px solid #fff;
+  width: 100%;
+  font-size: 40px;
+  font-weight: bolder;
+}
+.sheet-header .sheet-rule-title input:last-child {
+  font-size: 18px;
+}
+
+.sheet-header .sheet-player {
+  width: 30%;
+  float: right;
+  text-align: right;
+}
+
+.sheet-header .sheet-player span {
+  display: block;
+}
+
+.sheet-header .sheet-player input {
+  width: 100%;
+}
+
+h3 {
+  background: black;
+  color: #fff;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+.sheet-twin-left,
+.sheet-twin-right,
+.sheet-stat,
+.sheet-advance,
+.sheet-profile-left,
+.sheet-profile-right {
+  width: 46%;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.sheet-twin-left,
+.sheet-twin-right {
+  width: 49%;
+}
+
+.sheet-twin-left {
+  margin-right: 5px;
+}
+
+.sheet-profile-left,
+.sheet-stat {
+  width: 70%
+}
+
+.sheet-profile-right {
+  width: auto;
+}
+
+.sheet-stat-table table tr:last-child td:nth-child(4) {
+  width: 115px;
+  text-align: right;
+}
+
+.sheet-skill-contents table tr:last-child td:nth-child(4) {
+  width: 125px;
+  text-align: right;
+}
+.sheet-skill-contents table tr:last-child td:nth-child(5) {
+  width: 50px;
+  text-align: right;
+}
+
+.sheet-stat-table table td:last-child,
+.sheet-skill-contents table td:last-child{
+  width: 70px;
+}
+
+.sheet-advance {
+  float: right;
+  width: 21%;
+}
+
+.sheet-advance-table {
+  text-align: right;
+}
+
+.sheet-inventory input[type=checkbox] + textarea,
+.sheet-friends input[type=checkbox] + textarea {
+  display: none;
+  width: 95%;
+  height: 40px;
+}
+
+.sheet-inventory input[type=checkbox]:checked + textarea,
+.sheet-friends input[type=checkbox]:checked + textarea {
+  display: block;
+}
+
+.sheet-inventory-row,
+.sheet-friends-row {
+  margin: 5px 0;
+}
+
+.sheet-inventory input[type=text] {
+  width: 345px;
+}
+
+.sheet-friends input[type=text] {
+  width: 179px;
+}
+
+div.sheet-memo {
+  padding: 0;
+}
+
+.sheet-memo textarea {
+  width: 781px;
+  border: none;
+  border-radius: 0;
+  margin: 0;
+}
+
+.sheet-common .sheet-footer {
+  border: none;
+  margin-bottom:0;
+  width: 811px;
+  margin-left: -10px;
+  text-align: center;
+}
+
+.sheet-footer p {
+  margin-bottom:0;
+}
+
+.sheet-rolltemplate-stat,
+.sheet-rolltemplate-skill,
+.sheet-rolltemplate-use,
+.sheet-rolltemplate-advance {
+  text-align: center;
+  max-width: 100% !important;
+  width: 100%;
+  word-break: keep-all;
+  box-sizing: border-box;
+}
+
+.sheet-rolltemplate-stat .sheet-header,
+.sheet-rolltemplate-skill .sheet-header,
+.sheet-rolltemplate-use .sheet-header,
+.sheet-rolltemplate-advance .sheet-header,
+.sheet-rolltemplate-stat .sheet-body,
+.sheet-rolltemplate-skill .sheet-body,
+.sheet-rolltemplate-use .sheet-body,
+.sheet-rolltemplate-advance .sheet-body {
+    background: #222;
+    padding: 10px;
+    border: 4px double #ffaa00;
+}
+
+.sheet-rolltemplate-stat .sheet-header,
+.sheet-rolltemplate-skill .sheet-header,
+.sheet-rolltemplate-use .sheet-header,
+.sheet-rolltemplate-advance .sheet-header {
+    font-size: 18px;
+    font-weight: bolder;
+    margin-bottom: 10px;
+}
+
+/*
+.sheet-rolltemplate-stat .sheet-body,
+.sheet-rolltemplate-skill .sheet-body,
+.sheet-rolltemplate-use .sheet-body,
+.sheet-rolltemplate-advance .sheet-body {
+}
+*/
+
+.sheet-rolltemplate-stat .sheet-body > div,
+.sheet-rolltemplate-skill .sheet-body > div,
+.sheet-rolltemplate-use .sheet-body > div,
+.sheet-rolltemplate-advance .sheet-body > div {
+    border-radius: 4px;
+    border: 1px solid #fff;
+    margin-bottom: 5px;
+    padding: 5px;
+}
+
+.sheet-rolltemplate-stat .sheet-body > div:last-child,
+.sheet-rolltemplate-skill .sheet-body > div:last-child,
+.sheet-rolltemplate-advance .sheet-body > div:last-child {
+    margin-bottom: 0;
+    background: #555;
+}
+
+.sheet-rolltemplate-use .sheet-body > div:last-child {
+  margin-bottom: 0;
+}
+
+.sheet-rolltemplate-stat .sheet-dice span.inlinerollresult,
+.sheet-rolltemplate-skill .sheet-dice span.inlinerollresult,
+.sheet-rolltemplate-advance .sheet-result span.inlinerollresult,
+.sheet-rolltemplate-advance .sheet-dice span.inlinerollresult {
+    background: none;
+    border: none;
+    font-size: inherit;
+    padding: inherit;
+}
