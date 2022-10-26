@@ -19,6 +19,7 @@
 
 .sheet-confidential textarea {
     width: 761px;
+    resize: vertical;
 }
 
 .sheet-confidential input::-webkit-outer-spin-button,
