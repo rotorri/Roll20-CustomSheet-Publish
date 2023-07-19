@@ -1,0 +1,1159 @@
+@import url('https://fonts.googleapis.com/css2?family=Song+Myung&display=swap');
+
+@font-face {
+    font-family: 'NanumBarunGothic';
+    font-style: normal;
+    font-weight: 400;
+    src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.eot');
+    }
+@font-face {
+    font-family: 'GowunDodum-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/GowunDodum-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* -----------------------------------------------
+    tag init & own style define
+------------------------------------------------ */
+.sheet-vtm.rotorri * {
+    box-sizing: border-box;
+    font-family: 'NanumBarunGothic';
+    font-size: 9.5pt;
+    color: #37374B;
+    font-weight: normal;
+    text-align: center;
+}
+
+.sheet-vtm.rotorri {
+    position: relative;
+    color: black;
+    width: 840px;
+    max-width: 840px;
+    word-break: keep-all;
+    background: 0px 0px / 100% url('https://imgur.com/z4TVser.png') no-repeat;
+    background-color: #cbcbcc;
+    padding-bottom: 20px;
+}
+
+.ui-dialog .sheet-vtm select,
+.ui-dialog .sheet-vtm input[type=text],
+.ui-dialog .sheet-vtm input[type=number],
+.ui-dialog .sheet-vtm input[type=radio],
+.ui-dialog .sheet-vtm input[type=checkbox],
+.ui-dialog .sheet-vtm textarea,
+.ui-dialog .sheet-vtm label {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    border-radius: 0;
+    white-space: break-spaces;
+    background: transparent;
+    appearance: none;
+}
+
+.sheet-vtm label {
+    cursor: pointer;
+}
+
+.ui-dialog .sheet-vtm textarea {
+    resize: vertical;
+}
+
+.ui-dialog .sheet-vtm input[type=text]::placeholder,
+.ui-dialog .sheet-vtm input[type=number]::placeholder,
+.ui-dialog .sheet-vtm input[type=checkbox]::placeholder,
+.ui-dialog .sheet-vtm input[type=textarea]::placeholder {
+    color: #999999;
+}
+
+.sheet-vtm label::before,
+.sheet-vtm input[type=checkbox]::before,
+.ui-dialog .sheet-vtm input[type=radio]::before {
+    content:"⚪";
+    color: #37374B;
+    line-height: 2.4;
+}
+
+.sheet-vtm input[type=checkbox]:checked ~ label::before,
+.sheet-vtm input[type=checkbox]:checked::before,
+.ui-dialog .sheet-vtm input[type=radio]:checked::before {
+    content:"⚫";
+}
+
+.sheet-vtm input[type=checkbox] {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sheet-vtm input[type=checkbox]:checked ~ label {
+    background: #282828;
+}
+
+.ui-dialog .sheet-vtm button[type=roll],
+.ui-dialog .sheet-vtm .btn-roll {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    border: none;
+    background-position: 1px;
+    background-color: transparent;
+    background-position: no-repeat;
+    font-size: 9.5pt;
+    font-weight: bolder;
+    text-shadow: none;
+    box-shadow: none;
+}
+
+.ui-dialog .charsheet button[type=roll]:before {
+    content: '';
+}
+
+.ui-dialog .sheet-vtm button[type=roll],
+.ui-dialog .sheet-vtm .btn-roll {
+    background-image: url('https://i.imgur.com/0gK7wdl.png');
+}
+
+.ui-dialog .sheet-vtm button[type=roll]:hover,
+.ui-dialog .sheet-vtm .btn-roll:hover {
+    background-image: url('https://i.imgur.com/if1rwte.png');
+}
+
+.ui-dialog .sheet-vtm button[type=roll]:active,
+.ui-dialog .sheet-vtm .btn-roll:active {
+    background-image: url('https://i.imgur.com/KuMrqBe.png');
+}
+
+.ui-dialog .sheet-vtm .btn-roll.btn-red {
+    background-image: url('https://i.imgur.com/3dwblaB.png');
+}
+
+.ui-dialog .sheet-vtm .btn-roll.btn-red:hover {
+    background-image: url('https://i.imgur.com/zNuYY2J.png');
+}
+
+.ui-dialog .sheet-vtm .btn-roll.btn-red:active {
+    background-image: url('https://i.imgur.com/ahp9LbK.png');
+}
+
+.ui-dialog .charsheet .repcontrol_add {
+    float: right;
+}
+
+.ui-dialog .sheet-vtm .attribute .btn-roll,
+.ui-dialog .sheet-vtm .attribute .btn-roll:hover,
+.ui-dialog .sheet-vtm .attribute .btn-roll:active {
+    background: transparent;
+}
+
+.ui-dialog .charsheet .sheet-vtm .attribute button.btn-roll::before {
+    content: '';
+}
+.ui-dialog .charsheet .sheet-vtm button.btn-roll.alt::after {
+    content: '*';
+}
+
+.sheet-vtm input[type=number]::-webkit-outer-spin-button,
+.sheet-vtm input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.sheet-vtm .btn-rowdel {
+    border: none;
+    width: 100%;
+    height: 100%;
+    color: white;
+    background: rgb(110,78,78);
+}
+
+.sheet-vtm .btn-rowdel:hover {
+    background: rgba(110,78,78,.8);
+}
+
+.sheet-vtm .diciplin > .repcontrol,
+.sheet-vtm .advantage > .repcontrol {
+    text-align: right;
+    margin-top: -10px;
+}
+
+.sheet-vtm .repcontrol button {
+    background: transparent;
+    border: none;
+    font-size: 9pt;
+    font-weight: bolder;
+    text-shadow: none;
+    box-shadow: none;
+    padding: 1px 5px;
+}
+
+.sheet-vtm .row-control button {
+    background: transparent;
+    border: none;
+    height: 20px;
+    width: inherit;
+    font-size: 8pt;
+    color: #37374B;
+}
+
+.sheet-vtm .row-control button:hover,
+.sheet-vtm .repcontrol button:hover {
+    background-color: rgba(193, 193, 193,.5);
+}
+
+.sheet-vtm .dn {
+    display: none;
+}
+
+.sheet-vtm input.non-input {
+    border:none;
+}
+
+/* -----------------------------------------------
+    color init
+------------------------------------------------ */
+.sheet-vtm .bg-dark {
+    background: rgba(193, 193, 193,.5);
+}
+
+.sheet-vtm .bg-light {
+    background: rgba(193, 193, 193,.25);
+}
+
+.sheet-vtm .border-b1 {
+    border-bottom: 1px solid #37374B;
+}
+
+.sheet-vtm .border-b2 {
+    border-bottom: 2px solid #37374B;
+}
+
+/* -----------------------------------------------
+    font style define
+------------------------------------------------ */
+.sheet-vtm .title-l {
+    font-family: 'Song Myung';
+    font-weight: bolder;
+    font-size: 14pt;
+}
+.sheet-vtm .title-m {
+    font-family: 'GowunDodum-Regular';
+    font-weight: bolder;
+    font-size: 10pt;
+}
+
+.sheet-vtm .title-s {
+    font-family: 'NanumBarunGothic';
+    font-size: 8pt;
+    font-weight: normal;
+}
+
+.sheet-vtm .title-9 {
+    font-size: 9pt;
+}
+
+.sheet-vtm .font-bolder {
+    font-weight: bolder;
+}
+
+.sheet-vtm .number-14 {
+    font-family: 'Song Myung';
+    font-weight: bolder;
+    font-size: 14pt;
+}
+
+.sheet-vtm .number-12 {
+    font-family: 'Song Myung';
+    font-weight: bolder;
+    font-size: 12pt;
+}
+
+.sheet-vtm .number-10 {
+    font-family: 'Song Myung';
+    font-weight: bolder;
+    font-size: 10pt;
+}
+
+.sheet-vtm .lh-13 {
+    /*h30, 9pt 2줄 기준*/
+    line-height: 1.3;
+}
+
+.sheet-vtm .lh-17 {
+    /*h30, 14pt 기준*/
+    line-height: 1.7;
+}
+
+.sheet-vtm .lh-22 {
+    /*h30, 10pt 기준*/
+    line-height: 2.2;
+}
+
+.sheet-vtm .lh-25 {
+    /*h30, 9pt 기준*/
+    line-height: 2.5;
+}
+.sheet-vtm .lh-28 {
+    /*h30, 8pt 기준*/
+    line-height: 2.8;
+}
+
+.sheet-vtm .text-red {
+    color: #7B2020;
+}
+
+.sheet-vtm .text-left {
+    text-align: left;
+}
+
+.sheet-vtm .text-right {
+    text-align: right;
+}
+
+.sheet-vtm input[type=checkbox].toggle::before,
+.sheet-vtm input[type=checkbox].toggle:checked::before {
+    content: '';
+}
+
+.sheet-vtm .toggle::after {
+    content: "ˇ";
+    color: #37374B;
+    font-weight: bolder;
+    font-size: 28px;
+    line-height: 0.6;
+    margin-top: 17px;
+}
+
+.sheet-vtm .toggle:checked::after {
+    color: #999999;
+}
+
+.sheet-vtm .has-toggle:has(.toggle) ~ .togglebox {
+    display: none;
+}
+.sheet-vtm .has-toggle:has(.toggle:checked) ~ .togglebox {
+    display: block;
+}
+
+/* -----------------------------------------------
+    size class init
+------------------------------------------------ */
+.sheet-vtm div {display: inline-block;}
+.sheet-vtm .block {display: block;}
+
+.sheet-vtm .w10 {width: 10px;}
+.sheet-vtm .w20 {width: 20px;}
+.sheet-vtm .w30 {width: 30px;}
+.sheet-vtm .w40 {width: 40px;}
+.sheet-vtm .w50 {width: 50px;}
+.sheet-vtm .w60 {width: 60px;}
+.sheet-vtm .w80 {width: 80px;}
+.sheet-vtm .w90 {width: 90px;}
+.sheet-vtm .w100 {width: 100px;}
+.sheet-vtm .w110 {width: 110px;}
+.sheet-vtm .w150 {width: 150px;}
+.sheet-vtm .w160 {width: 160px;}
+.sheet-vtm .w180 {width: 180px;}
+.sheet-vtm .w200 {width: 200px;}
+.sheet-vtm .w230 {width: 230px;}
+.sheet-vtm .w260 {width: 260px;}
+.sheet-vtm .w300 {width: 300px;}
+.sheet-vtm .w360 {width: 360px;}
+.sheet-vtm .w420 {width: 420px;}
+.sheet-vtm textarea.w420 {width: 420px !important;}
+.sheet-vtm .w690 {width: 690px;}
+.sheet-vtm textarea.w690 {width: 690px !important;}
+.sheet-vtm .w800 {width: 800px;}
+
+.sheet-vtm .h10 {height: 10px;}
+.sheet-vtm .h25 {height: 25px;}
+.sheet-vtm .h30 {height: 30px;}
+.sheet-vtm .mh30 {min-height: 30px;}
+.sheet-vtm .mh45 {min-height: 45px;}
+.sheet-vtm .h50 {height: 50px;}
+.sheet-vtm .h60 {height: 60px;}
+.sheet-vtm .h70 {height: 70px;}
+.sheet-vtm .h80 {height: 80px;}
+.sheet-vtm .mh125 {min-height: 125px;}
+.sheet-vtm .mh160 {min-height: 160px;}
+
+
+/* -----------------------------------------------
+    padding, margin class init
+------------------------------------------------ */
+.sheet-vtm .ml30 {margin-left:30px;}
+.sheet-vtm .mr10 {margin-right:10px;}
+
+
+/* -----------------------------------------------
+    grid style
+------------------------------------------------ */
+.sheet-vtm .flex {
+    display: flex;
+}
+
+.sheet-vtm .status,
+.sheet-vtm .attribute,
+.sheet-vtm .diciplin,
+.sheet-vtm .property,
+.sheet-vtm .advantage,
+.sheet-vtm .footer {
+    display: grid;
+    padding: 0 20px;
+    gap: 10px;
+    align-items: start;
+}
+
+.sheet-vtm .status,
+.sheet-vtm .attribute,
+.sheet-vtm .diciplin,
+.sheet-vtm .property,
+.sheet-vtm .advantage {
+    margin-bottom: 10px;
+}
+
+.sheet-vtm .row-col {
+    grid-column: 1 / -1;
+}
+
+/* --------- grid - status --------- */
+.sheet-vtm .status {
+    grid-template-columns: 260px 160px 90px 40px 210px;
+    gap: 10px;
+}
+
+.sheet-vtm .status .catchphrase {grid-column: 1 / span 2;}
+.sheet-vtm .status .freeroll {grid-column: 3 / span 3;}
+.sheet-vtm .status .portrait {grid-row: 2 / span 4;}
+.sheet-vtm .status .left-col {grid-column: 1 / 2;}
+.sheet-vtm .status .half-right-col {grid-column: 2 / span 4;}
+.sheet-vtm .status .center-col {grid-column-start: 2;}
+.sheet-vtm .status .right-col {grid-column: 3 / 6;}
+.sheet-vtm .status .mid-center-col {grid-column: 3 / 5;}
+.sheet-vtm .status .mid-right-col {grid-column-start: 5;}
+.sheet-vtm .status .tri-mid-col {grid-column: 2 / span 2;}
+.sheet-vtm .status .tri-right-col {grid-column: 4 / span 2;}
+
+/* --------- grid - attribute, diciplin --------- */
+.sheet-vtm .attribute,
+.sheet-vtm .diciplin .sec-body,
+.sheet-vtm .property {
+    grid-template-columns: repeat(3,260px);
+}
+
+.sheet-vtm .diciplin .sec-body {
+    display: grid;
+    gap: 10px;
+    align-items: start;
+}
+
+.sheet-vtm .diciplin .repitem .sec-body {
+    margin-bottom: 10px;
+}
+
+/* --------- grid - advantage --------- */
+.sheet-vtm .advantage .adv-row {
+    display: grid;
+    grid-template-columns: 60px 590px 150px;
+    gap: 0;
+}
+
+.sheet-vtm .advantage .adv-row.title {
+    grid-template-columns: 60px 110px 60px 420px 150px;
+}
+
+.sheet-vtm .advantage .adv-row .type,
+.sheet-vtm .advantage .adv-row .total {
+    grid-row: 1 / -11;
+}
+
+.sheet-vtm .advantage .adv-row .total {
+    grid-column-start: 3;
+}
+
+.sheet-vtm .advantage .adv-row .row-ele {
+    display: grid;
+    grid-template-columns: 110px 60px 390px 30px;
+}
+
+/* -----------------------------------------------
+    css style
+------------------------------------------------ */
+.sheet-vtm .header {    
+    height: 100px;
+}
+
+.sheet-vtm .status .center-col .flex input[name$="mod"]:not([value="0"]) ~ input {
+    color: #6e4e4e;
+}
+
+.status .portrait {
+    position: relative;
+}
+
+.status .portrait img {
+    position: absolute;
+    width: 240px;
+    height: 240px;
+    top: 0;
+    left: 0;
+}
+
+.status .portrait::before {
+    content: '240px * 240px';
+    position: absolute;
+    z-index: 0;
+    top: 5px;
+    right: 30px;
+}
+
+.status .portrait:has(img:not([src=""]))::before {
+    content: '';
+}
+
+.status .portrait img[src=""] {
+    display: none;
+}
+
+/* --------- track --------- */
+.sheet-vtm .status .track .fill10,
+.sheet-vtm .status .track .fill5 {
+    background: #5a5c5a;
+}
+
+.sheet-vtm input[type=checkbox]:checked ~ label {
+    background: #282828;
+}
+
+.track input[name="attr_humanity-current"][value="1"] ~ .fill1,
+.track input[name="attr_humanity-current"][value="2"] ~ .fill2,
+.track input[name="attr_humanity-current"][value="3"] ~ .fill3,
+.track input[name="attr_humanity-current"][value="4"] ~ .fill4,
+.track input[name="attr_humanity-current"][value="5"] ~ .fill5,
+.track input[name="attr_humanity-current"][value="6"] ~ .fill6,
+.track input[name="attr_humanity-current"][value="7"] ~ .fill7,
+.track input[name="attr_humanity-current"][value="8"] ~ .fill8,
+.track input[name="attr_humanity-current"][value="9"] ~ .fill9,
+.track input[name="attr_humanity-current"][value="10"] ~ .fill10 {
+    background: #52937b;
+}
+
+.track input[name="attr_life-current"][value="1"] ~ .fill1,
+.track input[name="attr_life-current"][value="2"] ~ .fill2,
+.track input[name="attr_life-current"][value="3"] ~ .fill3,
+.track input[name="attr_life-current"][value="4"] ~ .fill4,
+.track input[name="attr_life-current"][value="5"] ~ .fill5,
+.track input[name="attr_life-current"][value="6"] ~ .fill6,
+.track input[name="attr_life-current"][value="7"] ~ .fill7,
+.track input[name="attr_life-current"][value="8"] ~ .fill8,
+.track input[name="attr_life-current"][value="9"] ~ .fill9,
+.track input[name="attr_life-current"][value="10"] ~ .fill10 {
+    background: #6e4e4e;
+}
+
+.track input[name="attr_will-current"][value="1"] ~ .fill1,
+.track input[name="attr_will-current"][value="2"] ~ .fill2,
+.track input[name="attr_will-current"][value="3"] ~ .fill3,
+.track input[name="attr_will-current"][value="4"] ~ .fill4,
+.track input[name="attr_will-current"][value="5"] ~ .fill5,
+.track input[name="attr_will-current"][value="6"] ~ .fill6,
+.track input[name="attr_will-current"][value="7"] ~ .fill7,
+.track input[name="attr_will-current"][value="8"] ~ .fill8,
+.track input[name="attr_will-current"][value="9"] ~ .fill9,
+.track input[name="attr_will-current"][value="10"] ~ .fill10 {
+    background: #566f7b;
+}
+
+.track input[name="attr_life-max"] ~ .fill10 {
+    opacity: 0;
+}
+
+.track input[name="attr_life-max"][value="1"] ~ .fill1,
+.track input[name="attr_life-max"][value="2"] ~ .fill2,
+.track input[name="attr_life-max"][value="3"] ~ .fill3,
+.track input[name="attr_life-max"][value="4"] ~ .fill4,
+.track input[name="attr_life-max"][value="5"] ~ .fill5,
+.track input[name="attr_life-max"][value="6"] ~ .fill6,
+.track input[name="attr_life-max"][value="7"] ~ .fill7,
+.track input[name="attr_life-max"][value="8"] ~ .fill8,
+.track input[name="attr_life-max"][value="9"] ~ .fill9,
+.track input[name="attr_life-max"][value="10"] ~ .fill10 {
+    opacity: 1;
+}
+
+.track input[name="attr_will-max"] ~ .fill10 {
+    opacity: 0;
+}
+
+.track input[name="attr_will-max"][value="1"] ~ .fill1,
+.track input[name="attr_will-max"][value="2"] ~ .fill2,
+.track input[name="attr_will-max"][value="3"] ~ .fill3,
+.track input[name="attr_will-max"][value="4"] ~ .fill4,
+.track input[name="attr_will-max"][value="5"] ~ .fill5,
+.track input[name="attr_will-max"][value="6"] ~ .fill6,
+.track input[name="attr_will-max"][value="7"] ~ .fill7,
+.track input[name="attr_will-max"][value="8"] ~ .fill8,
+.track input[name="attr_will-max"][value="9"] ~ .fill9,
+.track input[name="attr_will-max"][value="10"] ~ .fill10 {
+    opacity: 1;
+}
+
+.sheet-vtm .status .track input[name="attr_hunger"] ~ .fill5 {
+    background: transparent;
+}
+
+.sheet-vtm .status .track input[name="attr_hunger"][value="1"] ~ .fill1,
+.sheet-vtm .status .track input[name="attr_hunger"][value="2"] ~ .fill2,
+.sheet-vtm .status .track input[name="attr_hunger"][value="3"] ~ .fill3,
+.sheet-vtm .status .track input[name="attr_hunger"][value="4"] ~ .fill4,
+.sheet-vtm .status .track input[name="attr_hunger"][value="5"] ~ .fill5 {
+    background: #6e4e4e;
+}
+
+.track input[value="2"] ~ .fill2 input::before,
+.track input[value="3"] ~ .fill3 input::before,
+.track input[value="4"] ~ .fill4 input::before,
+.track input[value="5"] ~ .fill5 input::before {
+    content:"⚫";
+}
+
+.track.non-full input[value="2"] ~ .fill2 input::before,
+.track.non-full input[value="3"] ~ .fill3 input::before,
+.track.non-full input[value="4"] ~ .fill4 input::before,
+.track.non-full input[value="5"] ~ .fill5 input::before {
+    content:"⚪";
+}
+
+.sheet-vtm .status .track.non-full input[type=checkbox]:checked::before {
+    content:"⚫";
+}
+
+.attribute .sec-header,
+.attribute .skill-header,
+.diciplin .sec-header {
+    background-color: transparent;
+}
+
+/* --------- attribute and skill --------- */
+.ui-dialog .sheet-vtm .attribute .btn-roll:hover {
+    background-color: rgba(193, 193, 193, .25);
+}
+
+.sheet-vtm .attribute .track .btn-reset::before,
+.sheet-vtm .attribute .track .btn-reset:checked::before {
+    content: '✖';
+    color: #999999;
+    font-size: 6pt;
+    line-height: 3.5em;
+}
+
+.sheet-vtm .attribute .track .btn-reset:checked::before {
+    opacity: 0;
+}
+
+/* --------- diciplin --------- */
+.diciplin .col.text-right {
+    border-top: 2px solid #37374B;
+}
+
+.diciplin .has-toggle {
+    border-bottom: 1px solid #37374B;
+}
+
+.diciplin .row-control {
+    display: block;
+    border-top: 1px solid #37374B;
+    text-align: right;
+}
+
+.diciplin .togglebox {
+    background: rgba(193, 193, 193,.5);
+}
+
+.diciplin .togglebox > div.w200 + div.flex,
+.diciplin .dici-row:last-child {
+    border-bottom: 1px solid #717188 ;
+}
+
+.diciplin .score.flex.h30.w260 {
+    border-bottom: 1px solid #37374B;
+}
+
+.diciplin .score > .w60 {
+    font-size: 8.5pt;
+}
+
+.diciplin .togglebox .flex:nth-child(5) {
+    border-top: 1px solid #717188;
+    border-bottom: 1px solid #717188;
+}
+
+.diciplin .dici-row .font-bolder.w30 {
+    line-height: 2;
+}
+
+.diciplin .togglebox .choose:has(input[type=hidden][value="1"]) ~ .chosen input[class$="non-input"],
+.diciplin .togglebox .choose:has(input[type=hidden]:not([value="1"])) ~ .chosen input:not([class$="non-input"]) {
+    display: block;
+}
+.diciplin .togglebox .choose:has(input[type=hidden][value="1"]) ~ .chosen input:not([class$="non-input"]),
+.diciplin .togglebox .choose:has(input[type=hidden]:not([value="1"])) ~ .chosen input[class$="non-input"] {
+    display: none;
+}
+
+
+/* --------- diciplin row add --------- */
+.diciplin .dici-row.added {
+    display: none;
+    text-align: left;
+    position: inherit;
+}
+
+.diciplin .dici-row.added:has(input[type=hidden][name$="delcheck-1"][value="1"]),
+.diciplin .dici-row.added:has(input[type=hidden][name$="delcheck-2"][value="1"]),
+.diciplin .dici-row.added:has(input[type=hidden][name$="delcheck-3"][value="1"]),
+.diciplin .dici-row.added:has(input[type=hidden][name$="delcheck-4"][value="1"]),
+.diciplin .dici-row.added:has(input[type=hidden][name$="delcheck-5"][value="1"]) {
+    display: block;
+}
+
+/* --------- diciplin row delete --------- */
+.row-dim,
+.sheet-vtm .diciplin .row-dim {
+    display: none;
+    position: absolute;
+    background: rgba(0,0,0,.3);
+    cursor: not-allowed;
+    z-index: 10;
+}
+
+.diciplin .delmode ~ .dici-row.added .row-dim {
+    width: 230px;
+    height: 25px;
+}
+
+.diciplin .delmode[value="1"] ~ .dici-row.added .row-dim,
+.diciplin .delmode[value="1"] ~ .dici-row.added .btn-rowdel {
+    display: inline-block;
+}
+
+.diciplin .delmode[value="0"] ~ .row-control .btn-rowadd,
+.diciplin .delmode[value="0"] ~ .row-control .btn-rowdel,
+.diciplin .delmode[value="0"] ~ .dici-row.added .btn-roll,
+.diciplin .delmode[value="1"] ~ .dici-row.added .btn-rowdel,
+.diciplin .delmode[value="1"] ~ .row-control .btn-rowdone {
+    display: inline-block;
+}
+
+.diciplin .delmode[value="1"] ~ .row-control .btn-rowadd,
+.diciplin .delmode[value="1"] ~ .row-control .btn-rowdel,
+.diciplin .delmode[value="1"] ~ .dici-row.added .btn-roll,
+.diciplin .delmode[value="0"] ~ .dici-row.added .btn-rowdel,
+.diciplin .delmode[value="0"] ~ .row-control .btn-rowdone {
+    display: none;
+}
+
+.diciplin .row-count[value="5"] ~ .btn-rowadd {
+    display: none;
+}
+
+
+/* --------- diciplin-temp --------- */
+.diciplin .dici-row.test {
+    display: none;
+}
+.diciplin .row-count[value="1"] ~ .dici-row.row1 {
+    display: block;
+}
+
+
+/* --------- property --------- */
+.property textarea {
+    background: rgba(193, 193, 193,.5);
+}
+
+.property .item-row .has-toggle,
+.property .item-row:not(:has(.has-toggle)) > div {
+    border-bottom: 1px solid #37374B;
+}
+
+.property .repcontainer {
+    display: block;
+    border-bottom: 1px solid #37374B;
+}
+
+/* --------- advantage --------- */
+.sheet-vtm .advantage {
+    gap: 0;
+}
+
+.advantage .adv-row {
+    border-top: 2px solid #37374B;
+    border-bottom: 2px solid #37374B;
+}
+
+.advantage .adv-row.title {
+    border: none;
+}
+
+.advantage .adv-row .row-ele {
+    border-bottom: 1px dotted #37374B;
+}
+
+.advantage .adv-row .row-count[value="0"] ~ .row-ele:nth-child(5),
+.advantage .adv-row .row-count[value="1"] ~ .row-ele:nth-child(6),
+.advantage .adv-row .row-count[value="2"] ~ .row-ele:nth-child(7),
+.advantage .adv-row .row-count[value="3"] ~ .row-ele:nth-child(8),
+.advantage .adv-row .row-count[value="4"] ~ .row-ele:nth-child(9),
+.advantage .adv-row .row-count[value="5"] ~ .row-ele:nth-child(10),
+.advantage .adv-row .row-count[value="6"] ~ .row-ele:nth-child(11),
+.advantage .adv-row .row-count[value="7"] ~ .row-ele:nth-child(12),
+.advantage .adv-row .row-count[value="8"] ~ .row-ele:nth-child(13) {
+    border-bottom: none;
+}
+
+.advantage .adv-row ~ .row-control .btn-rowdone {
+    display: none;
+}
+
+.sheet-vtm .advantage > .repcontrol {
+    margin-top: 0;
+}
+.advantage .adv-row .total input[type=checkbox] {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* --------- advantage row add --------- */
+.advantage .adv-row .row-ele.added {
+    display: none;
+    text-align: left;
+    position: inherit;
+}
+
+.advantage .adv-row .row-ele.added:has(input[type=hidden][name$="delcheck-1"][value="1"]),
+.advantage .adv-row .row-ele.added:has(input[type=hidden][name$="delcheck-2"][value="1"]),
+.advantage .adv-row .row-ele.added:has(input[type=hidden][name$="delcheck-3"][value="1"]),
+.advantage .adv-row .row-ele.added:has(input[type=hidden][name$="delcheck-4"][value="1"]),
+.advantage .adv-row .row-ele.added:has(input[type=hidden][name$="delcheck-5"][value="1"]),
+.advantage .adv-row .row-ele.added:has(input[type=hidden][name$="delcheck-6"][value="1"]),
+.advantage .adv-row .row-ele.added:has(input[type=hidden][name$="delcheck-7"][value="1"]),
+.advantage .adv-row .row-ele.added:has(input[type=hidden][name$="delcheck-8"][value="1"]) {
+    display: grid;
+}
+
+/* --------- advantage row delete --------- */
+.advantage .delmode ~ .row-ele.added .row-dim {
+    width: 560px;
+    height: 25px;
+}
+
+.advantage .adv-row .delmode[value="1"] ~ .row-ele.added .row-dim,
+.advantage .adv-row .delmode[value="1"] ~ .row-ele.added .btn-rowdel,
+.advantage .adv-row:has(.delmode[value="0"]) ~ .row-control .btn-rowadd,
+.advantage .adv-row:has(.delmode[value="0"]) ~ .row-control .btn-rowdel,
+.advantage .adv-row:has(.delmode[value="1"]) ~ .row-control .btn-rowdone {
+    display: inline-block;
+}
+
+.advantage .adv-row .delmode[value="0"] ~ .row-ele.added .row-dim,
+.advantage .adv-row .delmode[value="0"] ~ .row-ele.added .btn-rowdel,
+.advantage .adv-row:has(.delmode[value="1"]) ~ .row-control .btn-rowadd,
+.advantage .adv-row:has(.delmode[value="1"]) ~ .row-control .btn-rowdel {
+    display: none;
+}
+
+.advantage .adv-row:has(.row-count[value="8"]) ~ .row-control .btn-rowadd {
+    display: none;
+}
+
+/* --------- footer --------- */
+.sheet-vtm .footer textarea {
+    background: rgba(193, 193, 193,.5);
+}
+.sheet-rolltemplate-vtm {
+    box-sizing: border-box;
+    width: 260px;
+    min-width: 260px;
+    max-width: 260px;
+    padding: 20px;
+    background-repeat: no-repeat;
+    font-family: 'Song Myung';
+    font-weight: bolder;
+    font-size: 9pt;
+    color: #37374B;
+}
+
+.sheet-rolltemplate-vtm * {
+    box-sizing: border-box;
+}
+
+.sheet-rolltemplate-vtm:has(.sheet-template-style-1) {
+    background-image: url('https://i.imgur.com/U1089g7.png');
+}
+
+.sheet-rolltemplate-vtm:has(.sheet-template-style-2) {
+    background-image: url('https://i.imgur.com/upmzjLo.png');
+}
+
+.sheet-rolltemplate-vtm:has(.sheet-template-style-3) {
+    background-image: url('https://i.imgur.com/yelRsPC.png');
+}
+
+.sheet-rolltemplate-vtm .sheet-row {
+    min-height: 25px;
+    max-height: 240px;
+}
+
+.sheet-rolltemplate-vtm .sheet-h25 {
+    height: 25px;
+    line-height: 1.5em;
+}
+
+.sheet-rolltemplate-vtm .sheet-h30 {
+    height: 30px;
+    line-height: 2.5;
+}
+
+.sheet-rolltemplate-vtm .sheet-h40 {
+    height: 40px;
+    line-height: 3em;
+}
+
+.sheet-rolltemplate-vtm .sheet-h50 {
+    height: 50px;
+    line-height: 4em;
+}
+
+.sheet-rolltemplate-vtm .sheet-font12 {
+    font-size: 12pt;
+}
+
+.sheet-rolltemplate-vtm .sheet-row .sheet-row-title,
+.sheet-rolltemplate-vtm .sheet-row .sheet-row-text,
+.sheet-rolltemplate-vtm .sheet-row .sheet-row-max {
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    width: 100%;
+}
+
+.sheet-rolltemplate-vtm .sheet-row .sheet-row-title {
+    width: 40px;
+    max-width: 40px;
+    float:left;
+}
+
+.sheet-rolltemplate-vtm .sheet-row .sheet-row-title.sheet-title-l {
+    width: 100px;
+    max-width: 100px;
+}
+
+.sheet-rolltemplate-vtm .sheet-row .sheet-row-text {
+    width: calc(100% - 40px);
+    clear: both;
+}
+
+.sheet-rolltemplate-vtm:has(.sheet-template-style-3) .sheet-row .sheet-row-text {
+    font-family: 'NanumBarunGothic';
+    font-weight: normal;
+}
+
+.sheet-rolltemplate-vtm .sheet-row .sheet-title-l ~ .sheet-row-text {
+    width: calc(100% - 100px);
+}
+
+.sheet-rolltemplate-vtm .sheet-row .sheet-row-max {
+    display: block;
+}
+
+.sheet-rolltemplate-vtm .sheet-row .sheet-half-text {
+    width: 60px;
+    margin-right: 20px;
+    float:left;
+    clear: none;
+}
+.sheet-rolltemplate-vtm .sheet-row .sheet-half-text:last-child {
+    margin: 0;
+}
+
+
+.sheet-rolltemplate-vtm .sheet-head {
+    font-size: 12pt;
+}
+
+.sheet-rolltemplate-vtm .sheet-head .sheet-heavy {
+    font-size: 18pt;
+}
+
+.sheet-rolltemplate-vtm .sheet-head .sheet-row:last-child {
+    height: 50px;
+    line-height: 2.1;
+}
+
+.sheet-rolltemplate-vtm .sheet-head .sheet-row:has(.sheet-plus) {
+    text-align: center;
+    font-size: 16pt;
+    line-height: 2.2em;
+}
+
+.sheet-rolltemplate-vtm .sheet-head .sheet-row .sheet-plus {
+    display: inline-block;
+}
+
+.sheet-rolltemplate-vtm .sheet-head .sheet-row:has(.sheet-punish) {
+    height: 50px;
+    background-image: url('https://i.imgur.com/h0POUWq.png');
+}
+
+.sheet-rolltemplate-vtm .sheet-head .sheet-row:has(.sheet-awake) {
+    height: 50px;
+    background-image: url('https://i.imgur.com/oomY6Bc.png');
+}
+
+.sheet-rolltemplate-vtm .sheet-neck .sheet-row span {
+    font-size: 9pt;
+    font-weight: normal;
+}
+
+.sheet-rolltemplate-vtm:has(.sheet-template-style-3) .sheet-body .sheet-desc-small,
+.sheet-rolltemplate-vtm:has(.sheet-template-style-3) .sheet-body .sheet-desc-mid,
+.sheet-rolltemplate-vtm:has(.sheet-template-style-3) .sheet-body .sheet-desc-max {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'NanumBarunGothic';
+    font-weight: normal;
+}
+
+.sheet-rolltemplate-vtm:has(.sheet-template-style-3) .sheet-body .sheet-desc-small {
+    height: 125px;
+}
+
+.sheet-rolltemplate-vtm:has(.sheet-template-style-3) .sheet-body .sheet-desc-mid {
+    height: 155px;
+}
+
+.sheet-rolltemplate-vtm:has(.sheet-template-style-3) .sheet-body .sheet-desc-max {
+    height: 215px;
+}
+
+/* -----------------------------------------------
+    body - dice
+------------------------------------------------ */
+.sheet-rolltemplate-vtm span.inlinerollresult {
+    background-color: transparent;
+    border: none;
+    font-size: 14pt;
+}
+
+.sheet-rolltemplate-vtm .sheet-body .sheet-dice-check {
+    min-height: 165px;
+    max-height: 165px;
+    display: flex;
+    justify-content: center;
+    align-content: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.sheet-rolltemplate-vtm:has(.sheet-template-style-2) .sheet-body .sheet-dice-check {
+    min-height: 125px;
+    max-height: 125px;
+    justify-content: center;
+}
+
+.sheet-rolltemplate-vtm .sheet-body .sheet-dice-check .sheet-normal-dices,
+.sheet-rolltemplate-vtm .sheet-body .sheet-dice-check .sheet-hunger-dices {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-repeat: no-repeat;
+}
+
+.sheet-rolltemplate-vtm  .sheet-normal-dices.sheet-dice-fail {
+    background-image: url('https://i.imgur.com/HfbUHCT.png');
+}
+.sheet-rolltemplate-vtm  .sheet-normal-dices.sheet-dice-success {
+    background-image: url('https://i.imgur.com/ahKcYys.png');
+}
+.sheet-rolltemplate-vtm  .sheet-normal-dices.sheet-dice-crit {
+    background-image: url('https://i.imgur.com/gXe9NT5.png');
+}
+
+.sheet-rolltemplate-vtm  .sheet-hunger-dices.sheet-dice-fumble {
+    background-image: url('https://i.imgur.com/PQs40R9.png');
+}
+.sheet-rolltemplate-vtm  .sheet-hunger-dices.sheet-dice-fail {
+    background-image: url('https://i.imgur.com/9FmsXqG.png');
+}
+.sheet-rolltemplate-vtm  .sheet-hunger-dices.sheet-dice-success {
+    background-image: url('https://i.imgur.com/H20wY7s.png');
+}
+.sheet-rolltemplate-vtm  .sheet-hunger-dices.sheet-dice-crit {
+    background-image: url('https://i.imgur.com/KQ8mxrj.png');
+}
+
+.sheet-rolltemplate-vtm .sheet-foot .sheet-row-text {
+    font-size: 14pt;
+    line-height: 2.5;
+    color: #7B2020;
+}
+
+.sheet-rolltemplate-vtm .sheet-foot .sheet-gap > div {
+    line-height: 2em;
+}
+
+/* -----------------------------------------------
+    result
+------------------------------------------------ */
+.sheet-rolltemplate-vtm .sheet-result .sheet-row div[class|="sheet-result"] {
+    display: none;
+    font-size: 14pt;
+    line-height: 4em;
+    height: 50px;
+}
+
+.sheet-rolltemplate-vtm:has(.sheet-template-style-2) .sheet-result .sheet-row div[class|="sheet-result"] {
+    line-height: 2em;
+    height: 40px;
+}
+
+.sheet-rolltemplate-vtm:has(.sheet-template-style-2) .sheet-result .sheet-row .sheet-dice-desc div[class|="sheet-result"] {
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    font-family: 'NanumBarunGothic';
+    font-weight: normal;
+    font-size: 9pt;
+    line-height: inherit;
+}
+
+.sheet-rolltemplate-vtm .sheet-result .sheet-result-fumble,
+.sheet-rolltemplate-vtm .sheet-result .sheet-result-hunger-fumble,
+.sheet-rolltemplate-vtm .sheet-result .sheet-result-hunger-crit {
+    color: #7B2020;
+}
+
+/* -----------------------------------------------
+    dices
+------------------------------------------------ */
+.sheet-rolltemplate-vtm:has(.sheet-template-style-2) .sheet-body ~ .sheet-result .sheet-row .sheet-result-success {
+    display: none;
+}
+
+.sheet-rolltemplate-vtm:has(.sheet-template-style-2) .sheet-body ~ .sheet-result .sheet-row .sheet-result-fail {
+    display: block;
+}
+
+.sheet-rolltemplate-vtm:has(.sheet-template-style-2) .sheet-body:has(.sheet-dice-success) ~ .sheet-result .sheet-row .sheet-result-fail {
+    display: none;
+}
+
+.sheet-rolltemplate-vtm:has(.sheet-template-style-2) .sheet-body:has(.sheet-dice-success) ~ .sheet-result .sheet-row .sheet-result-success {
+    display: block;
+}
