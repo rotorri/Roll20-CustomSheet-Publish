@@ -961,6 +961,7 @@
 .sheet-rolltemplate-vtm:has(.sheet-template-style-3) .sheet-row .sheet-row-text {
     font-family: 'NanumBarunGothic';
     font-weight: normal;
+    line-height: 1.0;
 }
 
 .sheet-rolltemplate-vtm .sheet-row .sheet-title-l ~ .sheet-row-text {
@@ -1025,7 +1026,7 @@
 .sheet-rolltemplate-vtm:has(.sheet-template-style-3) .sheet-body .sheet-desc-max {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     font-family: 'NanumBarunGothic';
     font-weight: normal;
 }
@@ -1036,10 +1037,12 @@
 
 .sheet-rolltemplate-vtm:has(.sheet-template-style-3) .sheet-body .sheet-desc-mid {
     height: 155px;
+    overflow-y: scroll;
 }
 
 .sheet-rolltemplate-vtm:has(.sheet-template-style-3) .sheet-body .sheet-desc-max {
     height: 215px;
+    overflow-y: scroll;
 }
 
 /* -----------------------------------------------

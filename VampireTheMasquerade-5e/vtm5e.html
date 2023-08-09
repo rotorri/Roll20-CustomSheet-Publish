@@ -1182,16 +1182,15 @@
         // 세션 회복 굴림용
         on(`clicked:recovery`, function() {
             startRoll("&{template:vtm}{{tempstyle=[[3]]}}{{type=세션을 시작합니다.}}{{name=회복 Roll}}{{neckstyle=[[1]]}}{{neck1=[[@{life-current}+(@{damage-show-life}-@{stamina})]]}}{{neck2=[[0]]}}{{desc=표면적 생명력이 '체력' 수치만큼 회복됩니다. 표면적 의지력이 '평정심과 결의 중 높은 값'으로 회복됩니다. 이전 세션에서 '열망'에 따라 행동했으므로 치명적 의지력 피해를 1점 회복합니다.}}",(results) => {
-                getAttrs(['composure','resolve','will-current','damage-show-will','life-current','life-max','will-max','stamina','damage-show-life'], function(v) {
+                getAttrs(['composure','resolve','will-current','life-current','life-max','will-max','stamina','damage-show-life'], function(v) {
                     let composure = parseInt(Object.values(v)[0]);
                     let resolve = parseInt(Object.values(v)[1]);
                     let now_will = parseInt(Object.values(v)[2]);
-                    let injury = parseInt(Object.values(v)[3]);
-                    let now_life = parseInt(Object.values(v)[4]);
-                    let now_life_max = parseInt(Object.values(v)[5]);
-                    let now_will_max = parseInt(Object.values(v)[6]);
-                    let stamina = parseInt(Object.values(v)[7]);
-                    let injury_heal = parseInt(Object.values(v)[8]);
+                    let now_life = parseInt(Object.values(v)[3]);
+                    let now_life_max = parseInt(Object.values(v)[4]);
+                    let now_will_max = parseInt(Object.values(v)[5]);
+                    let stamina = parseInt(Object.values(v)[6]);
+                    let injury_heal = parseInt(Object.values(v)[7]);
     
                     let target = 0;
                     if(composure > resolve) {
@@ -1201,7 +1200,7 @@
                     } else if (composure = resolve){
                         target = composure;
                     }
-                    let calc = now_will+(injury-target);
+                    let calc = target;
                     if(calc >10) calc = 10;
                     finishRoll(results.rollId, {
                         neck2: calc
