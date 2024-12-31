@@ -81,14 +81,14 @@
 }
 
 .sheet-header {
-    background: url('https://imgur.com/5K0w78F.png');
+    background: url('https://i.imgur.com/5K0w78F.png');
     background-position: -80px -10px;
     height: 200px;
     position: relative;
 }
 
 .sheet-header .sheet-title {
-    background-image : url('https://imgur.com/zrLqP1J.png');
+    background-image : url('https://i.imgur.com/zrLqP1J.png');
     width: 500px;
     height: 120px;
     margin: 10px;
@@ -242,7 +242,7 @@
     width: 20px;
     height: 20px;
     border-radius: 20px;
-    background: url('https://imgur.com/cTjfWhw.png');
+    background: url('https://i.imgur.com/cTjfWhw.png');
 }
 
 .sheet-ability-icon2::before {
@@ -365,7 +365,7 @@
 }
 
 .sheet-ability-dice:checked + label::before {
-    background: 0px 0px url('https://imgur.com/wkK2LNh.png') no-repeat;
+    background: 0px 0px url('https://i.imgur.com/wkK2LNh.png') no-repeat;
 }
 
 .sheet-ability-dice:checked + label:nth-child(4)::before {
@@ -614,7 +614,7 @@
   height: 40px;
   position: absolute;
   border: 1px solid #fff;
-  background: 0 0 / auto 100% no-repeat url('https://imgur.com/eZdLNuN.png');
+  background: 0 0 / auto 100% no-repeat url('https://i.imgur.com/eZdLNuN.png');
   left: 10px;
   border-radius: 40px;
 }
