@@ -9,7 +9,8 @@
 ```
 
 - Developer Contact Here
-    - 트위터 : https://twitter.com/the_rotorri
+    - 블루스카이 : https://bsky.app/profile/rotorri.com
+    - 트위터 : https://twitter.com/the_rotorri (사용안함)
     - 포스타입 : https://rotorri.postype.com
     - 깃허브 : https://github.com/rotorri
 
